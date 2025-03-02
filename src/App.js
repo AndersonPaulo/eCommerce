@@ -5,9 +5,16 @@ import Add from "./assets/cruz.svg";
 import Shooping from "./assets/carrinho-de-compras.svg";
 import Home from "./assets/icon.png";
 import Itens from "./assets/Frango_Assado.png";
+import MenuHorizontal from "./scripts/menuHorizontal";
 import './App.css';
 
+
+
 function App() {
+
+const menuItems = ['FRANGOS','LINGUIÇAS','ACOMPANHAMENTOS','ACOMPANHAMENTOS','CUSTELINHAS','SOBREMESSAS','BEBIDAS']
+  
+
   return (
     <div className="App">
       <header className="App-header">
@@ -21,16 +28,11 @@ function App() {
           <div className="opened">Abre Hoje às 10h</div>          
           <div className="perfil_button">Perfil da loja</div>
         </div>
-        <div className="list">
-              <ul>
-                <li className="menu_one">PROMOÇÃO DO DIA</li>
-                <li className="menu_two">FRANGOS</li>
-                <li className="menu_tree">LINGUIÇAS</li>
-                <li className="menu_four">ACOMPANHAMENTOS</li>
-                <li className="menu_five">CUSTELINHAS</li>
-                <li className="menu_six">SOBREMESSAS</li>
-                <li className="menu_seven">BEBIDAS</li>
-              </ul>
+        <div  >
+          
+              <MenuHorizontal items = {menuItems}/>
+             
+          
         </div>
         <div className="name_list">PROMOÇÃO DO DIA</div>
           <hr className="hr_prime"></hr>
