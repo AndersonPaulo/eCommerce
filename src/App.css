@@ -87,7 +87,8 @@
     width: 100%;
   }
   .scroll_menu {  
-    
+    position: relative;
+    top: -0.7rem;
     background-color: rgba(199, 201, 202, 0.885);
   }
   .scroll_menu .menu_itens{

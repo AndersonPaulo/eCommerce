@@ -6,11 +6,12 @@ const MenuHorizontal = ({items}) =>{
     const [activeItem, setActiveItem] = useState(items[0])
 
     const handleClick = (item) => {
-      setActiveItem(item)
-      //const menuScroll = document.getElementsByClassName("scroll_menu")
+      setActiveItem(item)    
       const itemElement = document.getElementById(item)
       if(itemElement){
-        const scrollLeft = itemElement.offsetLeft - menuRef.current.offsetWidth / 2 + itemElement.offsetWidth / 2
+        //const itemRect = itemElement.getBoundingClientRect()
+        //const menuRect = menuRef.current.getBoundingClientRect()//itemElement.offsetLeft - menuRef.current.offsetWidth / 2 + itemElement.offsetWidth / 2
+        const scrollLeft = itemElement.offsetLeft//itemRect.left - menuRect.left
         menuRef.current.scrollTo({
           left: scrollLeft,
           behavior: 'smooth',
