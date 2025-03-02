@@ -104,11 +104,11 @@
   .scroll_menu .menu_itens.active{
     background-color: lightblue;
   }
-  .name_list{
+  .name_list .name{
     display: flex;
     position: relative;
     top: 0.3rem;
-    left:-5rem;
+    left:0rem;
     font-size: 1.1rem;
     font-weight: 800;
     color: red;
