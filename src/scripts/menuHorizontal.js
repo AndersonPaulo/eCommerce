@@ -1,4 +1,5 @@
 import React, { useRef, useState } from 'react'
+import { Link } from 'react-scroll'
 
 const MenuHorizontal = ({items}) =>{
 
@@ -6,6 +7,7 @@ const MenuHorizontal = ({items}) =>{
     const [activeItem, setActiveItem] = useState(items[0])
 
     const handleClick = (item) => {
+      
       setActiveItem(item)    
       const itemElement = document.getElementById(item)
       if(itemElement){
@@ -43,9 +45,9 @@ const MenuHorizontal = ({items}) =>{
                               
            
               }}
-                
+              
             >
-              {item}
+              <Link to = {`section${index}`} smooth={true} duration={500}>{item}</Link>
             </button>
           ))}
         </div>

@@ -7,11 +7,9 @@ import Drinks from './scripts/products/drinks'
 import FollowUp from './scripts/products/followUp'
 import Ribs from './scripts/products/ribs'
 import Sousage from './scripts/products/sausage'
-//import { Link, Element } from 'react-scroll'
 import logo from "./assets/oie_transparent.png"
 import Search from "./assets/procurar.svg"
 import Share from "./assets/compartilhar.png"
-
 import Shooping from "./assets/carrinho-de-compras.svg"
 import Home from "./assets/icon.png"
 
