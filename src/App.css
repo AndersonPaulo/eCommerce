@@ -1,5 +1,4 @@
 
-@media screen and (min-width: 375px) {
   .App {
     text-align: center;
   }  
@@ -16,25 +15,24 @@
   }
   .menu{
     display: flex;
-    position: fixed;
-    top: 0;
-    flex-wrap: nowrap;
+    position: relative;
     background-color: rgb(143, 2, 2);
     width: 100%;
-    height: 3.5rem;
+    top: -2rem;
   }
   .logo{
     display: flex;
     position: relative;
-    padding: 0 0 0 1rem;
+    left: 0.5rem;
     width: 4rem;
     height: 4rem;
   }
   .storeSlogan{
     display: flex;
+    position: relative;
     align-items: center;
     color: white;
-    padding: 0 0 0 1rem;
+    left: 1.88rem;
     font-weight: 700;
   }
   .search{
@@ -45,7 +43,7 @@
     border-radius: 1rem;
     position: relative;
     top: 1rem;
-    margin-left: 5rem;
+    left: 6rem;
     width: 1.1rem;
     height: 1.1rem;
   }
@@ -61,7 +59,7 @@
     border-radius: 1rem;
     position: relative;
     top: 1rem;
-    left: 0.7rem;
+    left: 7rem;
     width: 1.1rem;
     height: 1.1rem;
   
@@ -72,71 +70,58 @@
   }
   .submenu{
     display: flex;
-    justify-content: space-between;
-    position: fixed;
-    top: 3.7rem;
+    position: relative;
+    justify-content: space-around;
     flex-wrap: nowrap;
     width: 100%;
     font-size: 0.7rem;
     font-weight: 600;
+    top: -1.5rem;
   }
-  .opened{
-    padding: 0 0 0 1rem;
-  }
+ 
   .perfil_button{
-    padding: 0 1rem 0 0;
     color: red;
     font-weight: 800;
   }
-  
+  .fhatherScroll{
+    width: 100%;
+  }
   .scroll_menu {  
-    display: flex;
-    overflow: auto;
-    white-space: nowrap;
-    margin-top: -16rem;
+    
     background-color: rgba(199, 201, 202, 0.885);
   }
   .scroll_menu .menu_itens{
-  
-    text-align: center;
-    justify-content: space-evenly;
+    text-align: center;    
     font-size: 0.7rem;
     font-weight: 800;
-    padding:  0 0.5rem 0.2rem 0.5rem ;
     background-color: blanchedalmond;
     border-radius: 1rem;
-    text-decoration: none;
-  
+    z-index: 10;
+      
   }
-  .scroll_menu .menu_itens:hover{
-    cursor: pointer;
-  }
-  .scroll_menu .menu_itens.active {
-    background-color: #007bff;
-    color: white;
+ 
+  .scroll_menu .menu_itens.active{
+    background-color: lightblue;
   }
   .name_list{
     display: flex;
-    position: absolute;
-    left:1rem;
+    position: relative;
+    top: 0.3rem;
+    left:-5rem;
     font-size: 1.1rem;
     font-weight: 800;
     color: red;
-    margin-top: -28rem;
   }
   .hr_prime{
     display: flex;
     width: 90%;
-    position: fixed;
-    bottom: 33rem;
+  
   }
   .intens{
     display: flex;
     width: 90%;
     flex-direction: column;
-    position: absolute;
     text-align: left;
-    bottom: 29.5rem;
   }
   .products{
     display:flex;
@@ -144,7 +129,7 @@
     height: 5rem;
     flex-direction: column;
     position: relative;
-    top: 21.2rem;
+    top: 1rem;
     padding: 0.7rem;
   
   }
@@ -158,14 +143,23 @@
     font-weight: 800;
   }
   .add_item{
+    display: flex;    
+    position: relative;
     width: 1.2rem;
-    height: 1.2rem;
-    display: flex;
+    height: 1.2rem;    
     justify-content: center;
+    align-items: center;
     border-radius: 0.1rem;
     background-color:rgb(128, 84, 248);
-    margin-left: 18rem;
+    left: 17rem;
   }
+  .add_item img{
+    position: relative;
+    width: 0.5rem;
+    height: 0.5rem;
+    left: 0.25rem;
+  }
+
   .add_shopping{
     width: 1.2rem;
     height: 1.2rem;
@@ -183,9 +177,9 @@
   span .unity{
   
     text-align: center;
-    position: absolute;
-    top: 3.5rem;
-    right: 1rem;
+    position: relative;
+    top: 0.5rem;
+    left: 0.2rem;
     width: 0.7rem;
     height: 0.7rem;
     background-color: red;
@@ -213,108 +207,34 @@
     top: 2.4rem;
   
   }
-  .name_list_two{
-    display: flex;
-    position: absolute;
-    left:1rem;
-    font-size: 1.1rem;
-    font-weight: 800;
-    color: red;
-    margin-top: 28rem;
-  }
+
   .footer{
     display: flex;
-    position: fixed;
+    position: relative;
     height: 3.5rem;
     width: 100%;
     background-color: #e5dfdf;
-    bottom: 0rem;
+    top: 2rem;
   }
   .buy_shopping{
     width: 1.7rem;
     height: 1.7rem;
     display: flex;
+    position: relative;
     justify-content: center;
     border-radius: 0.1rem;
-    margin-left: 20rem;
-    margin-top: 1rem
+    left: 18.5rem;
+    top: 1rem
   }
   .home{
     width: 2.5rem;
     height: 2.5rem;
     display: flex;
-    position: absolute;
+    position: relative;
     justify-content: center;
     border-radius: 0.1rem;
     left: 1.5rem;
-    margin-top: 1rem
+    top: 1rem
   }
   
-   /* .list ul{
-    position: fixed;
-    animation:normal;
-    animation-name: run_left;
-    animation-duration: 2.5s;
-  }  */
-  
-  .menu_one:active + .list {
    
-    animation:normal;
-    animation-name: run_left;
-    animation-duration: 2.5s;
-    
-  
-  }
-  .menu_two:active ~ .list {
-    position: fixed;
-    animation:normal;
-    animation-name: run_left;
-    animation-duration: 3.5s;
-  
-  }
-  .menu_tree:active ~ .list {
-    position: fixed;
-    animation:normal;
-    animation-name: run_left;
-    animation-duration: 4.5s;
-  
-  }
-  .menu_four:active ~ .list {
-    position: fixed;
-    animation:normal;
-    animation-name: run_left;
-    animation-duration: 5.5s;
-  
-  }
-  .menu_five:active ~ .list {
-    position: fixed;
-    animation:normal;
-    animation-name: run_left;
-    animation-duration: 6.5s;
-  
-  }
-  .menu_six:active ~ .list {
-    position: fixed;
-    animation:normal;
-    animation-name: run_left;
-    animation-duration: 7.5s;
-  
-  }
-  
-  .menu_seven:active ~ .list {
-    position: fixed;
-    animation:normal;
-    animation-name: run_left;
-    animation-duration: 2.5s;
-  
-  }
-  @keyframes run_left{
-   
-    100%{left: -80% }
-  
-  
-  
-  }
-  
-}
-

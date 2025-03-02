@@ -1,3 +1,5 @@
+import './App.css';
+import MenuHorizontal from "./scripts/menuHorizontal";
 import logo from "./assets/oie_transparent.png";
 import Search from "./assets/procurar.svg";
 import Share from "./assets/compartilhar.png";
@@ -5,14 +7,14 @@ import Add from "./assets/cruz.svg";
 import Shooping from "./assets/carrinho-de-compras.svg";
 import Home from "./assets/icon.png";
 import Itens from "./assets/Frango_Assado.png";
-import MenuHorizontal from "./scripts/menuHorizontal";
-import './App.css';
+
+
 
 
 
 function App() {
 
-const menuItems = ['FRANGOS','LINGUIÇAS','ACOMPANHAMENTOS','ACOMPANHAMENTOS','CUSTELINHAS','SOBREMESSAS','BEBIDAS']
+const menuItems = ['PROMOÇÃO','FRANGOS','LINGUIÇAS','ACOMPANHAMENTOS','CUSTELINHAS','SOBREMESSAS','BEBIDAS']
   
 
   return (
@@ -28,7 +30,7 @@ const menuItems = ['FRANGOS','LINGUIÇAS','ACOMPANHAMENTOS','ACOMPANHAMENTOS','C
           <div className="opened">Abre Hoje às 10h</div>          
           <div className="perfil_button">Perfil da loja</div>
         </div>
-        <div  >
+        <div className='fhatherScroll' >
           
               <MenuHorizontal items = {menuItems}/>
              
@@ -77,8 +79,7 @@ const menuItems = ['FRANGOS','LINGUIÇAS','ACOMPANHAMENTOS','ACOMPANHAMENTOS','C
           
         </div>
 
-        <div className="name_list_two">FRANGOS</div>
-          
+         
        
         <div className="footer">
           <span className="home"><img src={Home} alt="" ></img></span>
