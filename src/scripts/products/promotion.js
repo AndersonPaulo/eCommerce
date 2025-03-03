@@ -7,7 +7,7 @@ const products = ()=>{
     return(
         
         <div className="name_list">
-        <Element name="section1">
+        <Element name="section0">
         <span className="name">PROMOÇÃO DO DIA</span>
         </Element>
 

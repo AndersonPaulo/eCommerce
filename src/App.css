@@ -15,10 +15,11 @@
   }
   .menu{
     display: flex;
-    position: relative;
+    position: fixed;
     background-color: rgb(143, 2, 2);
     width: 100%;
-    top: -2rem;
+    top:0rem;
+    z-index:100;
   }
   .logo{
     display: flex;
@@ -70,13 +71,16 @@
   }
   .submenu{
     display: flex;
-    position: relative;
+    position: fixed;
     justify-content: space-around;
     flex-wrap: nowrap;
     width: 100%;
+    height: 6%;
     font-size: 0.7rem;
     font-weight: 600;
-    top: -1.5rem;
+    top: 4rem;
+    z-index:100;
+    background-color: rgba(205, 144, 14, 0.885);
   }
  
   .perfil_button{
@@ -84,12 +88,18 @@
     font-weight: 800;
   }
   .fhatherScroll{
+    position: relative;
     width: 100%;
+    max-height: 25%;
+    top: 5.5rem;
   }
   .scroll_menu {  
-    position: relative;
-    top: -0.7rem;
-    background-color: rgba(199, 201, 202, 0.885);
+    width: 100%;
+    
+    position: sticky ;
+    top:  0;
+    z-index:100;
+    background-color:rgba(205, 144, 14, 0.885);
   }
   .scroll_menu .menu_itens{
     text-align: center;    
@@ -107,7 +117,7 @@
   .name_list .name{
     display: flex;
     position: relative;
-    top: 0.3rem;
+    top: 5.5rem;
     left:0rem;
     font-size: 1.1rem;
     font-weight: 800;
@@ -115,7 +125,10 @@
   }
   .hr_prime{
     display: flex;
+    position: fixed;
+    top:8rem;
     width: 90%;
+    z-index:100;
   
   }
   .intens{
@@ -130,7 +143,7 @@
     height: 5rem;
     flex-direction: column;
     position: relative;
-    top: 1rem;
+    top: 5rem;
     padding: 0.7rem;
   
   }

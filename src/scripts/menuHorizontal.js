@@ -30,7 +30,7 @@ const MenuHorizontal = ({items}) =>{
                whiteSpace: 'nowrap',
                scrollbarWidth: 'none',               
                WebkitOverflowScrolling: 'touch',
-             
+          
                 }}>
 
           {items.map((item,index) => (

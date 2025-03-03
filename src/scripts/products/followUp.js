@@ -1,15 +1,16 @@
 import Add from "../../assets/cruz.svg"
 import Itens from "../../assets/Frango_Assado.png"
 import Shooping from "../../assets/carrinho-de-compras.svg"
+import { Element } from 'react-scroll'
 
 const products = ()=>{
 
     return(
         
         <div className="name_list">
-        
+        <Element name="section3">
         <span className="name">ACOMPANHAMENTOS</span>
-
+        </Element>
         <hr className="hr_prime"></hr>
 
             <div className="intens">

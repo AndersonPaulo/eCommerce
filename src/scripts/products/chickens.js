@@ -7,7 +7,7 @@ const products = ()=>{
     return(
         
         <div className="name_list">
-        <Element name="section2">
+        <Element name="section1">
         <span className="name">FRANGOS</span>
         </Element>
         <hr className="hr_prime"></hr>
