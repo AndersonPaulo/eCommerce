@@ -11,7 +11,6 @@ const products = ()=>{
         <Element name="section2">
             <span className="name">LINGUIÇAS</span>
         </Element>
-        <hr className="hr_prime"></hr>
 
             <div className="intens">
            

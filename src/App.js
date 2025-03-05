@@ -40,7 +40,8 @@ const menuItems = ['PROMOÇÃO','FRANGOS','LINGUIÇAS','ACOMPANHAMENTOS','COSTEL
             <MenuHorizontal items = {menuItems}/>             
           
         </div>
-        
+        <hr className="hr_prime"></hr>
+        <div className="all_product">
           <Promotion/>
           <Chickens/>
           <Sousage/>
@@ -48,7 +49,7 @@ const menuItems = ['PROMOÇÃO','FRANGOS','LINGUIÇAS','ACOMPANHAMENTOS','COSTEL
           <Ribs/>
           <Dessert/>
           <Drinks/>
-          
+        </div>  
           
          
        

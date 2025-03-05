@@ -6,15 +6,12 @@ const products = ()=>{
 
     return(
         
-        <div className="name_list">
-        <Element name="section0">
-        <span className="name">PROMOÇÃO DO DIA</span>
-        </Element>
+        <div name="section0" className="name_list">
+            <Element >
+            <span className="name">PROMOÇÃO DO DIA</span>
+            </Element>       
 
-        <hr className="hr_prime"></hr>
-
-            <div className="intens">
-           
+            <div className="intens">         
           
           
                 <div className="products">

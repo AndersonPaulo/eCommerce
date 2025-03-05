@@ -55,7 +55,8 @@ const MenuHorizontal = ({items}) =>{
               <Link 
                 to = {`section${index % 7}`} 
                 onClick={() => handleClick(item)}
-                smooth={true} duration={500}>{item}</Link>
+                offset={-20} 
+                smooth={true} duration={1100}>{item}</Link>
             </button>
           ))}
         </div>

@@ -11,7 +11,6 @@ const products = ()=>{
         <Element name="section3">
         <span className="name">ACOMPANHAMENTOS</span>
         </Element>
-        <hr className="hr_prime"></hr>
 
             <div className="intens">
            

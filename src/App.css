@@ -127,21 +127,21 @@
   .hr_prime{
     display: flex;
     position: fixed;
-    top:8rem;
+    top:7.8rem;
     width: 90%;
-    z-index:100;
   
   }
+  
   .intens{
     display: flex;
-    width: 90%;
+    width: 100%;
     flex-direction: column;
     text-align: left;
   }
   .products{
     display:flex;
     width: 20rem;
-    height: 5rem;
+    height: 9rem;
     flex-direction: column;
     position: relative;
     top: 5rem;
@@ -219,7 +219,7 @@
   .divisor_hr{
     position: relative;
     width: 100%;
-    top: 2.4rem;
+    top: 3.4rem;
   
   }
 

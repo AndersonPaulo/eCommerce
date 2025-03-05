@@ -10,7 +10,6 @@ const products = ()=>{
         <Element name="section1">
         <span className="name">FRANGOS</span>
         </Element>
-        <hr className="hr_prime"></hr>
 
             <div className="intens">
            

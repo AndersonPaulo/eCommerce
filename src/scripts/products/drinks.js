@@ -8,10 +8,9 @@ const products = ()=>{
     return(
         
         <div className="name_list">
-        <Element name="section6">
+            <Element name="section6">
             <span className="name">BEBIDAS</span>
             </Element>
-        <hr className="hr_prime"></hr>
 
             <div className="intens">
            
