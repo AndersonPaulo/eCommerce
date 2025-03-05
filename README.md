@@ -2,12 +2,16 @@
 
 Este é um projeto de estudo e prática de desenvolvimento web e automação, onde criamos uma plataforma de vendas e delivery de frango. A aplicação é responsiva, permitindo que usuários naveguem e realizem pedidos tanto no celular quanto no desktop.  
 
+## Layout
+
+<img src="" alt="layout ">
+
 ## 🚀 Tecnologias Utilizadas  
 
 - **Frontend:** ReactJS, JavaScript, HTML, CSS  
 - **Backend:** SQLite (futuro desenvolvimento)  
 - **Metodologia:** Scrum e Agile  
-- **Objetivo Secundário:** Estudo de automação de testes com Cypress e Postman  
+- **Objetivo Secundário:** Estudo de automação de testes com Cypress/Playwright e Postman  
 
 ## 🎯 Funcionalidades  
 
