@@ -53,6 +53,7 @@ const MenuHorizontal = ({items}) =>{
               
             >
               <Link 
+                
                 to = {`section${index % 7}`} 
                 onClick={() => handleClick(item)}
                 offset={-20} 
