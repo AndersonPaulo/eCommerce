@@ -10,7 +10,7 @@ const MenuHorizontal = ({items}) =>{
      
       setActiveItem(item)    
       const itemElement = document.getElementById(item)
-      
+
       if(itemElement){
       
         const scrollLeft = itemElement.offsetLeft
@@ -38,6 +38,7 @@ const MenuHorizontal = ({items}) =>{
                 }}>
 
           {items.map((item,index) => (
+             
             <button
               key={index}
               data-qa={item}
@@ -52,7 +53,7 @@ const MenuHorizontal = ({items}) =>{
               
             >
               <Link 
-                to = {`section${index}`} 
+                to = {`section${index % 7}`} 
                 onClick={() => handleClick(item)}
                 smooth={true} duration={500}>{item}</Link>
             </button>
