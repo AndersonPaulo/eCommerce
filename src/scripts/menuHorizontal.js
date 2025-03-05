@@ -6,18 +6,21 @@ const MenuHorizontal = ({items}) =>{
     const menuRef = useRef(null)
     const [activeItem, setActiveItem] = useState(items[0])
 
-    const handleClick = (item) => {
-      
+    const handleClick = (item) => {  
+     
       setActiveItem(item)    
       const itemElement = document.getElementById(item)
+      
       if(itemElement){
-        //const itemRect = itemElement.getBoundingClientRect()
-        //const menuRect = menuRef.current.getBoundingClientRect()//itemElement.offsetLeft - menuRef.current.offsetWidth / 2 + itemElement.offsetWidth / 2
-        const scrollLeft = itemElement.offsetLeft//itemRect.left - menuRect.left
+      
+        const scrollLeft = itemElement.offsetLeft
+        
         menuRef.current.scrollTo({
-          left: scrollLeft,
-          behavior: 'smooth',
-        })
+            left: scrollLeft,
+            behavior: 'smooth',
+          })
+     
+       
       }
     }
     return (
@@ -27,6 +30,7 @@ const MenuHorizontal = ({items}) =>{
               
               display: 'flex',
                overflowX: 'auto', 
+               overflowY: 'hidden',
                whiteSpace: 'nowrap',
                scrollbarWidth: 'none',               
                WebkitOverflowScrolling: 'touch',
@@ -38,8 +42,8 @@ const MenuHorizontal = ({items}) =>{
               key={index}
               data-qa={item}
               id={item}
-              className={`menu_itens ${activeItem === item ? 'active' : ''}`}
-              onClick={() => handleClick(item)}
+              className={`menu_itens ${activeItem === item ? 'active' : ''}`}             
+              
               style={{                
                 cursor: 'pointer',
                               
@@ -47,7 +51,10 @@ const MenuHorizontal = ({items}) =>{
               }}
               
             >
-              <Link to = {`section${index}`} smooth={true} duration={500}>{item}</Link>
+              <Link 
+                to = {`section${index}`} 
+                onClick={() => handleClick(item)}
+                smooth={true} duration={500}>{item}</Link>
             </button>
           ))}
         </div>
