@@ -20,6 +20,7 @@
     top:0rem;
     z-index:100;
   }
+ 
   .logo{
     display: flex;
     position: relative;
@@ -36,6 +37,15 @@
     left: 1.88rem;
     font-weight: 700;
   }
+  .serch_itens{
+    display: none;
+    position: fixed;
+    top:0.9rem;
+    left:15.2rem;
+    width: 20%;
+    height: 3%;
+    border-radius: 1.5rem;
+  }
   .search{
     display: flex;
     justify-content: center;
@@ -49,6 +59,7 @@
     height: 1.1rem;
     cursor: pointer;
   }
+ 
   .search img{
     width: 0.8rem;
     height: 0.8rem;
@@ -338,6 +349,15 @@
       width: 2rem;
       height: 2rem;
     }
+    .serch_itens{
+      display: none;
+      position: fixed;
+      top:3.9rem;
+      left:44rem;
+      width: 20%;
+      height: 4%;
+      border-radius: 1.5rem;
+    }
     .share{   
       border-radius: 1rem;    
       top: 4rem;
@@ -489,7 +509,7 @@
       background-color: #f8f8f8;     
     }
     .menu{   
-      width: 100%;
+      width: 150%;
       height: 15%;
     }
     .logo{ 
@@ -501,6 +521,15 @@
       font-size: 1.5rem;
       left: 18rem;
       font-weight: 700;
+    }
+    .serch_itens{
+      display: none;
+      position: fixed;
+      top:3.9rem;
+      left:55.7rem;
+      width: 30%;
+      height: 4%;
+      border-radius: 1.5rem;
     }
     .search{     
       border-radius: 1rem;    
@@ -603,7 +632,7 @@
       justify-content: center;
       border-radius: 0.3rem;
       top:6.2rem;
-      left: -15rem;    
+      left: -14rem;    
    
     }
     .add_item img{

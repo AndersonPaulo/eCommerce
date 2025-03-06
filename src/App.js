@@ -1,5 +1,7 @@
+import React, { useState } from 'react'
 import './App.css'
 import MenuHorizontal from "./scripts/menuHorizontal"
+import SearchItens from './scripts/search'
 import Promotion from './scripts/products/promotion'
 import Chickens from './scripts/products/chickens'
 import Dessert from './scripts/products/dessert'
@@ -18,17 +20,22 @@ import Home from "./assets/icon.png"
 
 
 function App() {
-
+const [estilos , setEstilos] = useState({ display: 'none' })
 const menuItems = ['PROMOÇÃO','FRANGOS','LINGUIÇAS','ACOMPANHAMENTOS','COSTELINHAS','SOBREMESSAS','BEBIDAS','PROMOÇÃO','FRANGOS','LINGUIÇAS','ACOMPANHAMENTOS','COSTELINHAS','SOBREMESSAS','BEBIDAS','PROMOÇÃO','FRANGOS','LINGUIÇAS','ACOMPANHAMENTOS','COSTELINHAS','SOBREMESSAS','BEBIDAS','PROMOÇÃO','FRANGOS','LINGUIÇAS','ACOMPANHAMENTOS','COSTELINHAS','SOBREMESSAS','BEBIDAS']
-  
 
+const ShowSearch = () =>{
+      const newDisplay = estilos === 'none' ? 'flex' : 'none'
+      setEstilos(newDisplay)
+  
+}
   return (
     <div className="App">
       <header className="App-header">
         <div className="menu">
           <div className="logo"><img src={logo} alt=""></img></div>
           <div className="storeSlogan">O melhor da Zona Oeste</div>
-          <div className="search"><img src={Search} alt=""></img></div>
+          <SearchItens estilo={{ display: estilos }} />
+          <div className="search" onClick={ShowSearch}><img src={Search} alt=""></img></div>
           <div className="share"><img src={Share} alt=""></img></div>
         </div>
         <div className="submenu">

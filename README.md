@@ -4,7 +4,8 @@ Este é um projeto de estudo e prática de desenvolvimento web e automação, on
 
 ## Layout
 
-<img src="" alt="layout ">
+<img src="./imagem/mobile-layout.png" alt="layout-mobile ">
+<img src="./imagem/desktop-layout.png" alt="layout-desktop ">
 
 ## 🚀 Tecnologias Utilizadas  
 
