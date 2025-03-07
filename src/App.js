@@ -47,7 +47,7 @@ const ShowSearch = () =>{
             <MenuHorizontal items = {menuItems}/>             
           
         </div>
-        <hr className="hr_prime"></hr>
+        
         <div className="all_product">
           <Promotion/>
           <Chickens/>

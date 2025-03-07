@@ -1,5 +1,8 @@
 import Add from "../../assets/cruz.svg"
 import Itens from "../../assets/Frango_Assado.png"
+import ItensOne from "../../assets/costelinha.jpg"
+import Itenstow from "../../assets/batata-frita.jpg"
+import Itenstree from "../../assets/linguiça.jpg"
 import Shooping from "../../assets/carrinho-de-compras.svg"
 import { Element } from 'react-scroll'
 const products = ()=>{
@@ -16,40 +19,36 @@ const products = ()=>{
           
                 <div className="products">
                 
-                    <span className="discrition">Frango/Batatas</span>
+                    <span className="discrition">Frango</span>
                     <span className="price">R$ 24,99</span>
                     <span className="image"><img src={Itens} alt="" ></img></span>
                     <span className="add_item"><img src={Add} alt="" ></img><span className="unity">0</span></span>
                     <span className="add_shopping"><img src={Shooping} alt="" ></img></span>
-                    <hr className="divisor_hr"></hr>
                 </div>
             
                 <div className="products">
                     
-                    <span className="discrition">Frango/Batatas/Linguiça</span>
+                    <span className="discrition">Frango</span>
                     <span className="price">R$ 32,99</span>
-                    <span className="image"><img src={Itens} alt=""></img></span>
+                    <span className="image"><img src={ItensOne} alt=""  width="240rem"></img></span>
                     <span className="add_item"><img src={Add} alt=""></img><span className="unity">0</span></span>
                     <span className="add_shopping"><img src={Shooping} alt="" ></img></span>
-                    <hr className="divisor_hr"></hr>
                 </div>
             
                 <div className="products">
-                <span className="discrition">Frango/Batatas/Salpicão</span>
+                <span className="discrition">Frango</span>
                     <span className="price">R$ 44,99</span>
-                    <span className="image"><img src={Itens} alt=""></img></span>
+                    <span className="image"><img src={Itenstow} alt=""  width="240rem"></img></span>
                     <span className="add_item"><img src={Add} alt="" ></img><span className="unity">0</span></span>
                     <span className="add_shopping"><img src={Shooping} alt="" ></img></span>
-                    <hr className="divisor_hr"></hr>
                 </div>
 
                 <div className="products">
-                <span className="discrition">Frango/Costelinha</span>
+                <span className="discrition">Frango</span>
                     <span className="price">R$ 44,99</span>
-                    <span className="image"><img src={Itens} alt=""></img></span>
+                    <span className="image"><img src={Itenstree} alt="" width="240rem"></img></span>
                     <span className="add_item"><img src={Add} alt="" ></img><span className="unity">0</span></span>
                     <span className="add_shopping"><img src={Shooping} alt="" ></img></span>
-                    <hr className="divisor_hr"></hr>
                 </div>
             </div>
         </div>
