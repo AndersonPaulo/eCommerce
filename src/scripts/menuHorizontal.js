@@ -39,7 +39,7 @@ const MenuHorizontal = ({items}) =>{
 
           {items.map((item,index) => (
              
-            <button
+            <button           
               key={index}
               data-qa={item}
               id={item}

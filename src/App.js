@@ -32,15 +32,15 @@ const ShowSearch = () =>{
     <div className="App">
       <header className="App-header">
         <div className="menu">
-          <div className="logo"><img src={logo} alt=""></img></div>
+          <div className="logo" data-qa="logo" ><img src={logo} alt=""></img></div>
           <div className="storeSlogan">O melhor da Zona Oeste</div>
           <SearchItens estilo={{ display: estilos }} />
-          <div className="search" onClick={ShowSearch}><img src={Search} alt=""></img></div>
-          <div className="share"><img src={Share} alt=""></img></div>
+          <div className="search" data-qa="search" onClick={ShowSearch}><img src={Search} alt=""></img></div>
+          <div className="share" data-qa="share"><img src={Share} alt=""></img></div>
         </div>
         <div className="submenu">
-          <div className="opened">Abre Hoje às 10h</div>          
-          <div className="perfil_button">Perfil da loja</div>
+          <div className="opened" data-qa="opened">Abre Hoje às 10h</div>          
+          <div className="perfil_button" data-qa="perfil_button">Perfil da loja</div>
         </div>
         <div className='fhatherScroll' >      
 

@@ -3,7 +3,7 @@ const Search = ({estilo})=>{
 
     return(
        
-            <input className="serch_itens" type="text" placeholder="Search..." style={estilo} /> 
+            <input className="serch_itens" data-qa="serch_itens" type="text" placeholder="Search..." style={estilo} /> 
         
     )
 
