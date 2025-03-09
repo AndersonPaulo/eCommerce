@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
+import { Link } from 'react-scroll'
 import './App.css'
+import ShareButtom from './scripts/sheareButon'
 import MenuHorizontal from "./scripts/menuHorizontal"
-import SearchItens from './scripts/search'
+import SearchItens from './scripts/serch'
 import Promotion from './scripts/products/promotion'
 import Chickens from './scripts/products/chickens'
 import Dessert from './scripts/products/dessert'
@@ -36,7 +38,7 @@ const ShowSearch = () =>{
           <div className="storeSlogan">O melhor da Zona Oeste</div>
           <SearchItens estilo={{ display: estilos }} />
           <div className="search" data-qa="search" onClick={ShowSearch}><img src={Search} alt=""></img></div>
-          <div className="share" data-qa="share"><img src={Share} alt=""></img></div>
+          <div className="share" data-qa="share" onClick={()=>ShareButtom.compartilhar()}><img src={Share} alt=""></img></div>
         </div>
         <div className="submenu">
           <div className="opened" data-qa="opened">Abre Hoje às 10h</div>          
@@ -61,7 +63,7 @@ const ShowSearch = () =>{
          
        
         <div className="footer">
-          <span className="home"><img src={Home} alt="" ></img></span>
+        <Link to = "section0" offset={-20}  smooth={true} duration={1100}><span className="home" ><img src={Home} alt="" ></img></span></Link>
           <span className="buy_shopping"><img src={Shooping} alt="" ></img></span>
           
         </div>
