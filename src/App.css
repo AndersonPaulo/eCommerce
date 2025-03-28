@@ -15,16 +15,15 @@
   .head{
     display: flex;
     position: fixed;
-    background-color: rgb(143, 2, 2);
-    width: 100%;
-    top:0rem;
+    width: 100%;  
+    height: 100%;  
     z-index:100;
   }
   .menu{
     display: flex;
     position: fixed;
     background-color: rgb(143, 2, 2);
-    width: 100%;
+    width: 100%;    
     top:0rem;
     z-index:100;
   }
@@ -111,6 +110,7 @@
   }
   .fhatherScroll{
     position: sticky ;
+    height: 100%;
     width: 100%;
     max-height: 25%;
     top: 5.5rem;
@@ -120,8 +120,9 @@
     
   }
   .scroll_menu {  
-    width: 100%;        
-    top:  0;    
+    width: 100%;    
+    position: relative;   
+    top:  0rem;    
     background-color:rgb(254, 165, 40);
   }
   .scroll_menu .menu_itens{
@@ -152,6 +153,11 @@
     width: 100%;
     flex-direction: column;
     text-align: left;
+  }
+  .all_product{
+    position: absolute;
+    top:0rem;
+    left: 1rem;
   }
   .products{
     display:flex;
@@ -571,10 +577,10 @@
     }
     .submenu{  
       width: 100%;
-      height: 6%;
+      height: 7%;
       font-size: 1rem;
       font-weight: 600;
-      top: 10rem;     
+      top: 8.5rem;     
      
     }
     .opened{
@@ -608,6 +614,10 @@
       grid-template-columns: repeat(2, 1fr); /* Duas colunas de igual largura */
       grid-template-rows: repeat(2, auto); /* Duas linhas com altura automática */
       gap: 3rem; /* Espaço entre os itens */
+    }
+    .all_product{
+         
+      left: 45rem;
     }
     .products{
       border: 0.3rem solid rgb(186, 186, 186);
@@ -690,14 +700,14 @@
     .footer{
       height: 7rem;
       width: 100%;    
-      top: 65rem;
+      top: 51rem;
       z-index: 1000;
     }
     .buy_shopping{
       width: 2.5rem;
       height: 2.5rem;
       border-radius: 0.1rem;
-      left: 120rem;
+      left: 100rem;
       top: 2rem;      
     }
     .home{
