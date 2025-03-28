@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
-import { Link } from 'react-scroll'
+import { Routes, Route , Link as LinkRout} from 'react-router-dom'
 import './App.css'
+import Footer from './scripts/footer'
+import  AboutPage from './scripts/aboutPage'
 import ShareButtom from './scripts/sheareButon'
 import MenuHorizontal from "./scripts/menuHorizontal"
 import SearchItens from './scripts/serch'
@@ -14,8 +16,7 @@ import Sousage from './scripts/products/sausage'
 import logo from "./assets/oie_transparent.png"
 import Search from "./assets/procurar.svg"
 import Share from "./assets/compartilhar.png"
-import Shooping from "./assets/carrinho-de-compras.svg"
-import Home from "./assets/icon.png"
+
 
 
 
@@ -34,7 +35,7 @@ const ShowSearch = () =>{
     <div className="App">
       <header className="App-header">
         <div className="menu">
-          <div className="logo" data-qa="logo" ><img src={logo} alt=""></img></div>
+          <LinkRout to="/"><div className="logo" data-qa="logo" ><img src={logo} alt=""></img></div></LinkRout>
           <div className="storeSlogan">O melhor da Zona Oeste</div>
           <SearchItens estilo={{ display: estilos }} />
           <div className="search" data-qa="search" onClick={ShowSearch}><img src={Search} alt=""></img></div>
@@ -42,7 +43,7 @@ const ShowSearch = () =>{
         </div>
         <div className="submenu">
           <div className="opened" data-qa="opened">Abre Hoje às 10h</div>          
-          <div className="perfil_button" data-qa="perfil_button">Perfil da loja</div>
+          <div className="perfil_button" data-qa="perfil_button"><LinkRout to="/perfil-loja">Perfil da loja</LinkRout></div>
         </div>
         <div className='fhatherScroll' >      
 
@@ -58,16 +59,18 @@ const ShowSearch = () =>{
           <Ribs/>
           <Dessert/>
           <Drinks/>
-        </div>  
-          
+        </div>           
          
        
-        <div className="footer">
-        <Link to = "section0" offset={-20}  smooth={true} duration={1100}><span className="home" ><img src={Home} alt="" ></img></span></Link>
-          <span className="buy_shopping"><img src={Shooping} alt="" ></img></span>
-          
-        </div>
+        <Footer/>
+        
       </header>
+
+          <Routes>
+            <Route path="/"/>
+            <Route path="/perfil-loja" element={<AboutPage />} />
+          </Routes>
+      
     </div>
   );
 }
