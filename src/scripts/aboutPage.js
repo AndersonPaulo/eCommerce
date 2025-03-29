@@ -1,39 +1,42 @@
+import '../style/aboutPage.css'
+
 const About = () => {
 
     return(
 
         
-        <div>
+        <div className='content'>
 
-                Casa do Hamburguer
-                SUA MELHOR OPÇÃO DENTRO E FORA DE CASA!!
+                <div className="slogan">
 
-                Horário de atendimento
-                Domingo: 18h30m às 23h59m
+                    <span>Frango Amigo</span>
+                    <span> O MELHOR DA ZONA OESTE!!</span>
+                </div>
+               
+                <div className="atendiment">
 
-                Segunda-feira: 18h30m às 23h59m
+                    <span className='title'>Horário de atendimento</span>
+                    <span>Domingo: 10h00m às 14h59m</span>
+                    <span>Segunda-feira: 10h00m às 14h59m</span>
+                    <span>Terça-feira: 10h00m às 14h59m</span>
+                    <span>Quarta-feira: 10h00m às 14h59mm</span>
+                    <span>Quinta-feira: 10h00m às 14h59mm</span>
+                    <span>Sexta-feira: 10h00m às 14h59m</span>
+                    <span>Sábado: 10h00m às 14h59m</span>
 
-                Terça-feira: 18h30m às 23h59m
+                </div>
+                <div className="paymentForm">
+                    <span className='title'>Formas de pagamento</span>
 
-                Quarta-feira: 18h30m às 23h59m
+                    <span>Cartão</span>
+                    <span>Dinheiro</span>
 
-                Quinta-feira: 18h30m às 23h59m
-
-                Sexta-feira: 18h30m às 00h30m
-
-                Sábado: 18h30m às 00h30m
-
-                Formas de pagamento
-
-                Cartão
-
-
-                Dinheiro
-
-                Endereço
-                Rua Prado Júnior, 126 - Santa Cruz, Rio de Janeiro - RJ, 23.555-212, Brasil
-
-
+                </div>
+                <div className="Adress">
+                    <span className='title'>Endereço</span>
+                    <span> Rua ciriaco, 186 - Santa Cruz, Rio de Janeiro - RJ, 23.000-212, Brasil</span>
+                </div>             
+               
 
         </div>
 

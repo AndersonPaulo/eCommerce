@@ -1,5 +1,6 @@
 import { Routes, Route } from 'react-router-dom'
 import './App.css'
+
 import Head from './scripts/head'
 import Footer from './scripts/footer'
 import  AboutPage from './scripts/aboutPage'

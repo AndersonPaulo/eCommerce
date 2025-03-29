@@ -1,0 +1,50 @@
+.content{
+    display:flex;
+    position: absolute;
+    flex-direction: column;    
+    top: 9rem;
+    text-align: left;
+    left:1rem
+    
+}
+
+.slogan{
+    color: red;
+    font-size: 1rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 900;
+    text-align: center;
+}
+.title{
+    background-color: rgb(118, 139, 139);
+    width: 90%;
+}
+span{
+    display: flex;
+    flex-direction: column;
+    padding: 0.2rem;
+}
+@media screen and (min-width:1025px) {
+
+    .content{
+  
+        top: 16rem;
+        left:30rem
+        
+    }
+    
+    .slogan{
+        position: relative;
+        text-align:center;
+        font-size: 2rem;
+        left: 15rem;
+    }
+    .title{
+
+        width: 200%;
+    }
+    span{
+
+        padding: 0.5rem;
+    }
+}

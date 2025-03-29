@@ -10,11 +10,17 @@ import Share from "../assets/compartilhar.png"
 const Head = () => {
 
     const [estilos , setEstilos] = useState({ display: 'none' })
+    const [estilosMenu , setEstilosMenu] = useState({ visibility: 'visible' })
     const menuItems = ['PROMOÇÃO','FRANGOS','LINGUIÇAS','ACOMPANHAMENTOS','COSTELINHAS','SOBREMESSAS','BEBIDAS','PROMOÇÃO','FRANGOS','LINGUIÇAS','ACOMPANHAMENTOS','COSTELINHAS','SOBREMESSAS','BEBIDAS','PROMOÇÃO','FRANGOS','LINGUIÇAS','ACOMPANHAMENTOS','COSTELINHAS','SOBREMESSAS','BEBIDAS','PROMOÇÃO','FRANGOS','LINGUIÇAS','ACOMPANHAMENTOS','COSTELINHAS','SOBREMESSAS','BEBIDAS']
 
     const ShowSearch = () =>{
         const newDisplay = estilos === 'none' ? 'flex' : 'none'
         setEstilos(newDisplay)
+    }
+    const ShowFatherScroll = () =>{
+      const newDisplays = estilosMenu === 'hidden' ? 'visible' : 'hidden'
+      setEstilosMenu(newDisplays)
+
     }
     return(
 
@@ -22,7 +28,7 @@ const Head = () => {
 
                   <div className="menu" >
 
-                    <Link to="/"><div className="logo" data-qa="logo" ><img src={logo} alt=""></img></div></Link>
+                    <Link to="/"><div className="logo" data-qa="logo" onClick={ShowFatherScroll}><img src={logo} alt=""></img></div></Link>
                     <div className="storeSlogan">O melhor da Zona Oeste</div>
                     <SearchItens estilo={{ display: estilos }} />
                     <div className="search" data-qa="search" onClick={ShowSearch}><img src={Search} alt=""></img></div>
@@ -33,13 +39,13 @@ const Head = () => {
                   <div className="submenu">
 
                     <div className="opened" data-qa="opened">Abre Hoje às 10h</div>          
-                    <div className="perfil_button" data-qa="perfil_button"><Link to="/perfil-loja">Perfil da loja</Link></div>
+                    <div className="perfil_button" data-qa="perfil_button" onClick={ShowFatherScroll}><Link to="/perfil-loja">Perfil da loja</Link></div>
 
                   </div>
 
-                  <div className='fhatherScroll' >      
+                  <div className='fhatherScroll' style={{visibility:estilosMenu}} >      
 
-                    <MenuHorizontal items = {menuItems}/>             
+                    <MenuHorizontal items = {menuItems} />             
 
                   </div>
 
