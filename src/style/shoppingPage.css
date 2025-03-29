@@ -4,21 +4,11 @@
     flex-direction: column;    
     top: 6rem;
     text-align: left;
-    left:1rem
-}
-.advanceButton{
-    display: flex;
-    justify-content: space-between;
-    width: 150%;
-    background-color: brown;
-    color: white;
-    font-weight: 600;
-    border-radius: 0.5rem;
-    padding: 1rem;
-    cursor: pointer;
-}
-.advanceButton:hover{
-    background-color: rgb(253, 90, 90);
+    left:1rem;
+    padding: 0.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 900;
 }
 
 .product {
@@ -94,4 +84,20 @@ textarea{
     position: relative;
     top:0.5rem;
     padding: 1rem;
+}
+.advanceButton{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    width: 140%;
+    background-color: brown;
+    color: white;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    cursor: pointer;
+    left: 0.5rem;
+}
+.advanceButton:hover{
+    background-color: rgb(253, 90, 90);
 }

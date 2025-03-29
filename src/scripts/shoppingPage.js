@@ -7,7 +7,7 @@ const Shooping = () =>{
 
             <div className="product">
                 <span  className="title">Detalhes  do Produto</span>
-                <span data-qa="productName">Produto</span>
+                <span data-qa="productName">Nome do Produto</span>
                 <span data-qa="productImage">Imagem do produto Aqui</span>
                 <span data-qa="productdescrition">Descrição do Produto Aqui</span>
 

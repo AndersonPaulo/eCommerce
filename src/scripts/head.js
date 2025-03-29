@@ -10,6 +10,7 @@ import Share from "../assets/compartilhar.png"
 const Head = () => {
 
     const [estilos , setEstilos] = useState({ display: 'none' })
+    const [estilosFooter,setEstilosFooter] = useState({ visibility: 'visible' })
     const [estilosMenu , setEstilosMenu] = useState({ visibility: 'visible' })
     const menuItems = ['PROMOÇÃO','FRANGOS','LINGUIÇAS','ACOMPANHAMENTOS','COSTELINHAS','SOBREMESSAS','BEBIDAS','PROMOÇÃO','FRANGOS','LINGUIÇAS','ACOMPANHAMENTOS','COSTELINHAS','SOBREMESSAS','BEBIDAS','PROMOÇÃO','FRANGOS','LINGUIÇAS','ACOMPANHAMENTOS','COSTELINHAS','SOBREMESSAS','BEBIDAS','PROMOÇÃO','FRANGOS','LINGUIÇAS','ACOMPANHAMENTOS','COSTELINHAS','SOBREMESSAS','BEBIDAS']
 
@@ -18,17 +19,24 @@ const Head = () => {
         setEstilos(newDisplay)
     }
     const ShowFatherScroll = () =>{
-      const newDisplays = estilosMenu === 'hidden' ? 'visible' : 'hidden'
-      setEstilosMenu(newDisplays)
+      const newVisibily = estilosMenu === 'visible' ? 'hidden' : 'hidden'
+      setEstilosMenu(newVisibily)
 
     }
+    const showAll = () =>{
+      const newVisibily = estilosMenu === 'hidden' ? 'visible' : 'visible'
+      setEstilosMenu(newVisibily)
+      const newVisibilyTwo = estilosFooter === 'hidden' ? 'visible' : 'visible'
+      setEstilosFooter(newVisibilyTwo)
+    }
+
     return(
 
       <div className="head">
 
                   <div className="menu" >
 
-                    <Link to="/"><div className="logo" data-qa="logo" onClick={ShowFatherScroll}><img src={logo} alt=""></img></div></Link>
+                    <Link to="/"><div className="logo" data-qa="logo" onClick={showAll} ><img src={logo} alt=""></img></div></Link>
                     <div className="storeSlogan">O melhor da Zona Oeste</div>
                     <SearchItens estilo={{ display: estilos }} />
                     <div className="search" data-qa="search" onClick={ShowSearch}><img src={Search} alt=""></img></div>
