@@ -1,4 +1,3 @@
-//import React, { useState } from 'react'
 import { Link } from 'react-scroll'
 import { useFooterContext } from "../scripts/FooterContext"
 import { Link as LinkRouter} from 'react-router-dom'
@@ -9,14 +8,7 @@ const Footer = ()=>{
     
     const { estilosFooter } = useFooterContext()
     const { esconderFooter } = useFooterContext()
-    //const [estilosFooterHidden , setEstilosMenu] = useState({ visibility: 'visible' })
-    //const hidenFooter = () =>{
-     //   const newVisibily = estilosFooterHidden === 'visible' ? 'hidden' : 'hidden'
-    //    setEstilosMenu(newVisibily)
-      
-       
-    //}
- 
+
 
     return(
 

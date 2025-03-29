@@ -144,20 +144,21 @@
     font-size: 1.1rem;
     font-weight: 800;
     margin-top: 2rem;
+    text-align: left;
     color: red;
   }
 
   
   .intens{
     display: flex;
-    width: 100%;
     flex-direction: column;
     text-align: left;
+    
   }
   .all_product{
     position: absolute;
     top:0rem;
-    left: 1rem;
+    left: 3rem;
   }
   .products{
     display:flex;
@@ -165,11 +166,9 @@
     border-radius: .5rem;
     border: 0.2rem solid rgba(186, 186, 186, 0.485);
     background-color: rgb(143, 24, 24);
-    width: 20rem;
-    height: 12rem;
-    flex-direction: column;
-    padding: 0.7rem;
-    margin-top: 0.1rem;
+    width: 18rem;
+    height: 8rem;
+    flex-direction: column; 
   
   }
   .image{
@@ -177,16 +176,15 @@
     justify-content: center;
     position: relative;
     background-color:rgb(254, 165, 40);
-    width: 10rem;
-    height: 12rem;   
-    left: 7rem;
+    width: 6rem;
+    left: 11rem;
     top: -1.5rem;
     border-radius: 1rem;
   }
   .image img {
-    display: flex;
+    display: flex;   
     position: relative;
-    top: 0.3rem;
+    top: 0rem;
     width: 6rem;
     height: 5rem;
     border-radius: 1rem;
@@ -194,48 +192,51 @@
   .discrition{
     position: relative;
     color: #f8f8f8;
-    top: 0rem;
+    top: 1rem;
+    left: 1rem;
     font-size:1rem;
     font-weight: 800;
   }
   .price{
     display: flex;
     position: relative;
-    top:7rem;
+    top:1rem;
+    left:1rem;
     font-size: 1rem;
     color: chocolate;
     font-weight: 800;
   }
   .add_item{
     position: relative;
-    width: 1.8rem;
-    height: 2rem;    
+    width: 1rem;
+    height: 1rem;    
     justify-content: center;
     align-items: center;
     border-radius: 0.21rem;
     background-color:rgb(128, 84, 248);
-    left: 15rem;
-    top: -0.4rem;
+    left: 5rem;
+    top: -4rem;
     cursor: pointer;
   }
   .add_item img{
     position: relative;
+    display: flex;
+    top:0.5rem;
     width: 0.5rem;
     height: 1.5rem;
-    left: 0.55rem;
    
   }
 
   .add_shopping{
-    width: 1.8rem;
+    width: 1rem;
     height: 1.8rem;
     display: flex;
     position: relative;
     justify-content: center;
     border-radius: 0.2rem;
     background-color:rgb(248, 84, 84);
-    left: -1.8rem;
-    top: -1.3rem;
+    left: -12rem;
+    top: -5.3rem;
     cursor: pointer;
   }
   .add_item img{
@@ -633,14 +634,14 @@
       font-weight: 800;
     }
     .price{  
-      font-size: 1.2rem;
-      top:3rem;
+      font-size: 1.5rem;
+      top:8rem;
       font-weight: 800;
     }
     .add_item{
     
-      width: 3rem;
-      height: 3rem;    
+      width: 1rem;
+      height: 1rem;    
       justify-content: center;
       align-items: center;
       border-radius: 0.3rem;     
@@ -648,19 +649,17 @@
       top:-2rem;     
     }
     .add_item img{    
-      width: 3rem;
-      height: 3rem;
-      left: 1rem;
+      top:0.8rem;
+      left: 0rem;
     }  
     .add_shopping{
       position: relative;
-      width: 3rem;
-      height: 8rem;
+      width: 1rem;
       display: flex;
       justify-content: center;
       border-radius: 0.3rem;
-      top:-3.4rem;
-      left: 8.5rem;    
+      top:-4rem;
+      left: 8.2rem;    
    
     }
     .add_item img{
@@ -670,28 +669,31 @@
     span .unity{
       top: 0.1rem;
       left: 1.12rem;
-      width: 1rem;
-      height: 1rem;    
+      width: 0.2rem;
+      height: 0.3rem;    
       border-radius: 0.5rem;
     }
     .unity{    
-      font-size: 0.7rem;
-      font-weight: 700;
+      position: relative;
+      font-size: 0.79rem;
+      font-weight: 900;
     }
     .add_shopping img{
-      width:1.2rem;
+      width:1rem;
     }
     .image{
       position: relative;
       width: 12rem;
       height: 13rem;
       background-color:rgb(254, 165, 40);
-      left: 10rem;
-      top:0rem;
+      left: 12rem;
+      top:-3rem;
       border-radius: 1rem;
     }
     .image img {
-      width: 10rem;
+      position: relative;
+      left: 1.5rem;
+      width: 9rem;
       height: 8rem;
       border-radius: 1rem;
     }
