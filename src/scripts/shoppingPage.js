@@ -29,7 +29,7 @@ const Shooping = () =>{
 
             <div className="observations">
                 <span className="title">Observações</span>
-                <textarea data-qa="text-area"></textarea>
+                <textarea data-qa="text-area" placeholder='Ex.:Frango bem passado...'></textarea>
             </div>
 
             <div className="advanceButton" data-qa="advanceButton">

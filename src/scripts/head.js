@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
+import { useFooterContext } from "../scripts/FooterContext"
 import ShareButtom from '../scripts/sheareButon'
 import MenuHorizontal from "../scripts/menuHorizontal"
 import SearchItens from '../scripts/serch'
@@ -7,12 +8,13 @@ import logo from "../assets/oie_transparent.png"
 import Search from "../assets/procurar.svg"
 import Share from "../assets/compartilhar.png"
 
-const Head = () => {
 
+const Head = () => {
+ 
     const [estilos , setEstilos] = useState({ display: 'none' })
-    const [estilosFooter,setEstilosFooter] = useState({ visibility: 'visible' })
     const [estilosMenu , setEstilosMenu] = useState({ visibility: 'visible' })
     const menuItems = ['PROMOÇÃO','FRANGOS','LINGUIÇAS','ACOMPANHAMENTOS','COSTELINHAS','SOBREMESSAS','BEBIDAS','PROMOÇÃO','FRANGOS','LINGUIÇAS','ACOMPANHAMENTOS','COSTELINHAS','SOBREMESSAS','BEBIDAS','PROMOÇÃO','FRANGOS','LINGUIÇAS','ACOMPANHAMENTOS','COSTELINHAS','SOBREMESSAS','BEBIDAS','PROMOÇÃO','FRANGOS','LINGUIÇAS','ACOMPANHAMENTOS','COSTELINHAS','SOBREMESSAS','BEBIDAS']
+    const { mostrarFooter } = useFooterContext()
 
     const ShowSearch = () =>{
         const newDisplay = estilos === 'none' ? 'flex' : 'none'
@@ -26,17 +28,17 @@ const Head = () => {
     const showAll = () =>{
       const newVisibily = estilosMenu === 'hidden' ? 'visible' : 'visible'
       setEstilosMenu(newVisibily)
-      const newVisibilyTwo = estilosFooter === 'hidden' ? 'visible' : 'visible'
-      setEstilosFooter(newVisibilyTwo)
+    
+      
     }
-
+   
     return(
 
       <div className="head">
 
                   <div className="menu" >
 
-                    <Link to="/"><div className="logo" data-qa="logo" onClick={showAll} ><img src={logo} alt=""></img></div></Link>
+                    <Link to="/"><div className="logo" data-qa="logo" onClick={mostrarFooter} ><img src={logo} onClick={showAll} alt=""></img></div></Link>
                     <div className="storeSlogan">O melhor da Zona Oeste</div>
                     <SearchItens estilo={{ display: estilos }} />
                     <div className="search" data-qa="search" onClick={ShowSearch}><img src={Search} alt=""></img></div>
@@ -56,10 +58,8 @@ const Head = () => {
                     <MenuHorizontal items = {menuItems} />             
 
                   </div>
-
-      </div>
-
-            
+                 
+      </div>            
 
     )
 
