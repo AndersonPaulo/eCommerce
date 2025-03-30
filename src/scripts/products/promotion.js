@@ -28,24 +28,24 @@ const products = ()=>{
             
                 <div className="products">
                     
-                    <span className="discrition">Frango</span>
-                    <span className="price">R$ 32,99</span>
+                    <span className="discrition">Costelinha</span>
+                    <span className="price">R$ 12,99</span>
                     <span className="image"><img src={ItensOne} alt=""  width="240rem"></img></span>
                     <span className="add_item"><img src={Add} alt=""></img><span className="unity">0</span></span>
                     <span className="add_shopping"><img src={Shooping} alt="" ></img></span>
                 </div>
             
                 <div className="products">
-                <span className="discrition">Frango</span>
-                    <span className="price">R$ 44,99</span>
+                <span className="discrition">Batata Frita</span>
+                    <span className="price">R$ 14,99</span>
                     <span className="image"><img src={Itenstow} alt=""  width="240rem"></img></span>
                     <span className="add_item"><img src={Add} alt="" ></img><span className="unity">0</span></span>
                     <span className="add_shopping"><img src={Shooping} alt="" ></img></span>
                 </div>
 
                 <div className="products">
-                <span className="discrition">Frango</span>
-                    <span className="price">R$ 44,99</span>
+                <span className="discrition">Linguiça</span>
+                    <span className="price">R$ 4,99</span>
                     <span className="image"><img src={Itenstree} alt="" width="240rem"></img></span>
                     <span className="add_item"><img src={Add} alt="" ></img><span className="unity">0</span></span>
                     <span className="add_shopping"><img src={Shooping} alt="" ></img></span>

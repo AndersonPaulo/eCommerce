@@ -1,18 +1,18 @@
 import { Link } from 'react-scroll'
-import { useFooterContext } from "../scripts/FooterContext"
+import { useEstiloContext } from "./Context"
 import { Link as LinkRouter} from 'react-router-dom'
 import Shooping from "../assets/carrinho-de-compras.svg"
 import Home from "../assets/icon.png"
 
 const Footer = ()=>{
     
-    const { estilosFooter } = useFooterContext()
-    const { esconderFooter } = useFooterContext()
+    const { estilos } = useEstiloContext()
+    const { esconderFooter } = useEstiloContext()
 
 
     return(
 
-        <div className="footer" style={{visibility:estilosFooter}}>
+        <div className="footer" style={{visibility:estilos}}>
 
           <Link to = "section0" offset={-20}  smooth={true} duration={1100}>
               <span className="home" ><img src={Home} alt="" ></img></span>

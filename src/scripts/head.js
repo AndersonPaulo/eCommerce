@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { useFooterContext } from "../scripts/FooterContext"
+import { useEstiloContext } from "./Context"
 import ShareButtom from '../scripts/sheareButon'
 import MenuHorizontal from "../scripts/menuHorizontal"
 import SearchItens from '../scripts/serch'
@@ -11,26 +11,19 @@ import Share from "../assets/compartilhar.png"
 
 const Head = () => {
  
-    const [estilos , setEstilos] = useState({ display: 'none' })
-    const [estilosMenu , setEstilosMenu] = useState({ visibility: 'visible' })
+    const [estilosSeah , setEstilos] = useState({ display: 'none' })
     const menuItems = ['PROMOÇÃO','FRANGOS','LINGUIÇAS','ACOMPANHAMENTOS','COSTELINHAS','SOBREMESSAS','BEBIDAS','PROMOÇÃO','FRANGOS','LINGUIÇAS','ACOMPANHAMENTOS','COSTELINHAS','SOBREMESSAS','BEBIDAS','PROMOÇÃO','FRANGOS','LINGUIÇAS','ACOMPANHAMENTOS','COSTELINHAS','SOBREMESSAS','BEBIDAS','PROMOÇÃO','FRANGOS','LINGUIÇAS','ACOMPANHAMENTOS','COSTELINHAS','SOBREMESSAS','BEBIDAS']
-    const { mostrarFooter } = useFooterContext()
+    const { mostrarFooter } = useEstiloContext()
+    const { mostrarScroll } = useEstiloContext()
+    const { esconderScrool } = useEstiloContext()
+    const { estilos } = useEstiloContext()
+
 
     const ShowSearch = () =>{
-        const newDisplay = estilos === 'none' ? 'flex' : 'none'
+        const newDisplay = estilosSeah === 'none' ? 'flex' : 'none'
         setEstilos(newDisplay)
     }
-    const ShowFatherScroll = () =>{
-      const newVisibily = estilosMenu === 'visible' ? 'hidden' : 'hidden'
-      setEstilosMenu(newVisibily)
-
-    }
-    const showAll = () =>{
-      const newVisibily = estilosMenu === 'hidden' ? 'visible' : 'visible'
-      setEstilosMenu(newVisibily)
-    
-      
-    }
+   
    
     return(
 
@@ -38,22 +31,23 @@ const Head = () => {
 
                   <div className="menu" >
 
-                    <Link to="/"><div className="logo" data-qa="logo" onClick={mostrarFooter} ><img src={logo} onClick={showAll} alt=""></img></div></Link>
+                    <Link to="/"><div className="logo" data-qa="logo" onClick={mostrarFooter} ><img src={logo} onClick={mostrarScroll} alt=""></img></div></Link>
                     <div className="storeSlogan">O melhor da Zona Oeste</div>
-                    <SearchItens estilo={{ display: estilos }} />
+                    <SearchItens estilo={{ display: estilosSeah }} />
                     <div className="search" data-qa="search" onClick={ShowSearch}><img src={Search} alt=""></img></div>
                     <div className="share" data-qa="share" onClick={()=>ShareButtom.compartilhar()}><img src={Share} alt=""></img></div>
+                    <Link to="/login" ><div className="sair" data-qa="sair" >sair</div></Link>
 
                   </div>
 
                   <div className="submenu">
 
                     <div className="opened" data-qa="opened">Abre Hoje às 10h</div>          
-                    <div className="perfil_button" data-qa="perfil_button" onClick={ShowFatherScroll}><Link to="/perfil-loja">Perfil da loja</Link></div>
+                    <div className="perfil_button" data-qa="perfil_button" onClick={esconderScrool}><Link to="/perfil-loja">Perfil da loja</Link></div>
 
                   </div>
 
-                  <div className='fhatherScroll' style={{visibility:estilosMenu}} >      
+                  <div className='fhatherScroll' style={{visibility:estilos}} >      
 
                     <MenuHorizontal items = {menuItems} />             
 

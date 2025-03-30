@@ -1,4 +1,5 @@
 import '../style/shoppingPage.css'
+import Itens from "../assets/Frango_Assado.png"
 
 const Shooping = () =>{
 
@@ -6,10 +7,12 @@ const Shooping = () =>{
         <div className="contentShopping" data-qa="contentShopping">
 
             <div className="product">
-                <span  className="title">Detalhes  do Produto</span>
-                <span data-qa="productName">Nome do Produto</span>
-                <span data-qa="productImage">Imagem do produto Aqui</span>
-                <span data-qa="productdescrition">Descrição do Produto Aqui</span>
+                <span  className="title">Detalhes  do Produto</span>           
+                <div className='item'>
+                    <span className="name">Frango/linguiça/Costelinha</span>                    
+                    <span className="image"><img src={Itens} alt=""></img></span>
+                    <span className='productprice'>R$ 49,00</span>
+                </div>            
 
             </div>
 

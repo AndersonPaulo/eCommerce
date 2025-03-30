@@ -27,24 +27,24 @@ const products = ()=>{
             
                 <div className="products">
                     
-                    <span className="discrition">Frango</span>
-                    <span className="price">R$ 32,99</span>
+                    <span className="discrition">Coca Cola</span>
+                    <span className="price">R$ 12,99</span>
                     <span className="image"><img src={Itens} alt=""></img></span>
                     <span className="add_item"><img src={Add} alt=""></img><span className="unity">0</span></span>
                     <span className="add_shopping"><img src={Shooping} alt="" ></img></span>
                 </div>
             
                 <div className="products">
-                <span className="discrition">Frango</span>
-                    <span className="price">R$ 44,99</span>
+                <span className="discrition">Coca Cola</span>
+                    <span className="price">R$ 14,99</span>
                     <span className="image"><img src={Itens} alt=""></img></span>
                     <span className="add_item"><img src={Add} alt="" ></img><span className="unity">0</span></span>
                     <span className="add_shopping"><img src={Shooping} alt="" ></img></span>
                 </div>
 
                 <div className="products">
-                <span className="discrition">Frango</span>
-                    <span className="price">R$ 44,99</span>
+                <span className="discrition">Coca Cola</span>
+                    <span className="price">R$ 14,99</span>
                     <span className="image"><img src={Itens} alt=""></img></span>
                     <span className="add_item"><img src={Add} alt="" ></img><span className="unity">0</span></span>
                     <span className="add_shopping"><img src={Shooping} alt="" ></img></span>

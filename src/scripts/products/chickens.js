@@ -17,7 +17,7 @@ const products = ()=>{
           
                 <div className="products">
                 
-                    <span className="discrition">Frango</span>
+                    <span className="discrition">Frango Simples</span>
                     <span className="price">R$ 24,99</span>
                     <span className="image"><img src={Itens} alt="" ></img></span>
                     <span className="add_item"><img src={Add} alt="" ></img><span className="unity">0</span></span>
@@ -26,7 +26,7 @@ const products = ()=>{
             
                 <div className="products">
                     
-                    <span className="discrition">Frango</span>
+                    <span className="discrition">Frango/linquiça</span>
                     <span className="price">R$ 32,99</span>
                     <span className="image"><img src={Itens} alt=""></img></span>
                     <span className="add_item"><img src={Add} alt=""></img><span className="unity">0</span></span>
@@ -34,7 +34,7 @@ const products = ()=>{
                 </div>
             
                 <div className="products">
-                <span className="discrition">Frango</span>
+                <span className="discrition">Frango/linguiça/Costelinha</span>
                     <span className="price">R$ 44,99</span>
                     <span className="image"><img src={Itens} alt=""></img></span>
                     <span className="add_item"><img src={Add} alt="" ></img><span className="unity">0</span></span>
@@ -42,7 +42,7 @@ const products = ()=>{
                 </div>
 
                 <div className="products">
-                <span className="discrition">Frango</span>
+                <span className="discrition">Frango/linguiça/bacon</span>
                     <span className="price">R$ 44,99</span>
                     <span className="image"><img src={Itens} alt=""></img></span>
                     <span className="add_item"><img src={Add} alt="" ></img><span className="unity">0</span></span>

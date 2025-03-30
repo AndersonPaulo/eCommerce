@@ -10,6 +10,16 @@
     font-size: 0.8rem;
     font-weight: 900;
 }
+.item{
+    position: relative;
+    padding: 0.5rem;
+
+}
+.item .image{
+    position: relative;
+    top: 1rem;
+    left: 8rem;
+}
 hr{
     width: 100%;
 }
@@ -47,10 +57,35 @@ hr{
     width: 25%;
 }
 .imgBatata{
-    background-image: url('../assets/batata\ assada.jpg') ;
+    background-image: url('../assets/batataassada.jpg');
+    background-repeat: no-repeat;
     height: 2rem;
     border-radius: 0.3rem;
     
+}
+.imgLingui{
+    background-image: url('../assets/linguiça.jpg');
+    background-repeat: no-repeat;
+    height: 2rem;
+    border-radius: 0.3rem;
+}
+.imgBacon{
+    background-image: url('../assets/bacon.jpg');
+    background-repeat: no-repeat;
+    height: 2rem;
+    border-radius: 0.3rem;    
+}
+.imgCostelinha{
+    background-image: url('../assets/costelinha.jpg');
+    background-repeat: no-repeat;
+    height: 2rem;
+    border-radius: 0.3rem;    
+}
+.imgFarofa{
+    background-image: url('../assets/farofa.jpg');
+    background-repeat: no-repeat;
+    height: 2rem;
+    border-radius: 0.3rem;    
 }
 .downButton{
     display: flex;
