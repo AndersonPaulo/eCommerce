@@ -31,12 +31,12 @@ const Head = () => {
 
                   <div className="menu" >
 
-                    <Link to="/"><div className="logo" data-qa="logo" onClick={mostrarFooter} ><img src={logo} onClick={mostrarScroll} alt=""></img></div></Link>
+                    <Link to="/Home"><div className="logo" data-qa="logo" onClick={mostrarFooter} ><img src={logo} onClick={mostrarScroll} alt=""></img></div></Link>
                     <div className="storeSlogan">O melhor da Zona Oeste</div>
                     <SearchItens estilo={{ display: estilosSeah }} />
                     <div className="search" data-qa="search" onClick={ShowSearch}><img src={Search} alt=""></img></div>
                     <div className="share" data-qa="share" onClick={()=>ShareButtom.compartilhar()}><img src={Share} alt=""></img></div>
-                    <Link to="/login" ><div className="sair" data-qa="sair" >sair</div></Link>
+                    <Link to="/" ><div className="sair" data-qa="sair" >sair</div></Link>
 
                   </div>
 
