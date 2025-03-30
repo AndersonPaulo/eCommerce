@@ -2,13 +2,15 @@
     text-align: center;
   }  
   
-  .App-header {
-    
-    min-height: 100vh;
+  .App-header {    
+    max-width: 400px;
+    width: 90%; 
     display: flex;
+    position: absolute;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    transform: translate(-50%, -50%);
     font-size:0.8rem;
     color: rgb(0, 0, 0);
   }
@@ -61,7 +63,7 @@
     border-radius: 1rem;
     position: relative;
     top: 1rem;
-    left: 6rem;
+    left: 3rem;
     width: 1.1rem;
     height: 1.1rem;
     cursor: pointer;
@@ -79,7 +81,7 @@
     border-radius: 1rem;
     position: relative;
     top: 1rem;
-    left: 7rem;
+    left: 3.5rem;
     width: 1.1rem;
     height: 1.1rem;
     cursor: pointer;
@@ -89,13 +91,28 @@
     width: 0.8rem;
     height: 0.8rem;
   }
+  .logof{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(246, 246, 246, 0.894);   
+    border-radius: 1rem;
+    position: relative;
+    top: 1rem;
+    left: 6em;
+    width: 1.3rem;
+    height: 1.2rem;
+    cursor: pointer;
+    font-size: 0.7rem;
+    font-weight: 800;
+  }
   .submenu{
     display: flex;
     position: fixed;
     justify-content: space-around;
     flex-wrap: nowrap;
     width: 100%;
-    height: 6%;
+    height: 3.7%;
     font-size: 0.7rem;
     font-weight: 600;
     top: 4rem;
@@ -143,7 +160,7 @@
     position: relative;
     font-size: 1.1rem;
     font-weight: 800;
-    margin-top: 2rem;
+    margin-top: 8rem;
     text-align: left;
     color: red;
   }
@@ -153,6 +170,7 @@
     display: flex;
     flex-direction: column;
     text-align: left;
+    position: relative;
     
   }
   .all_product{
@@ -235,7 +253,7 @@
     justify-content: center;
     border-radius: 0.2rem;
     background-color:rgb(248, 84, 84);
-    left: -12rem;
+    left: 7rem;
     top: -5.3rem;
     cursor: pointer;
   }
@@ -277,7 +295,7 @@
     position: relative;
     justify-content: center;
     border-radius: 0.1rem;
-    left: 18.5rem;
+    left: 17.5rem;
     top: 1rem;
     cursor: pointer;
     
@@ -336,6 +354,14 @@
       width: 2rem;
       height: 2rem;
     }
+    .logof{      
+      top: 4rem;
+      left: 82.5em;
+      width: 4rem;
+      height: 3rem;
+      font-size: 1rem;
+      font-weight: 900;
+    }
     .share{   
       border-radius: 1rem;    
       top: 4rem;
@@ -369,11 +395,11 @@
     } 
     .name_list {
       height: 80vh;
-      margin-top: 10.5rem;
+      margin-top: 22rem;
     
     } 
     .name_list .name{
-      top: 5rem;
+      top: 0rem;
       left:-15rem;
       font-size: 2rem;
       font-weight: 800;    
@@ -430,7 +456,7 @@
       justify-content: center;
       border-radius: 0.3rem;
       top:-4rem;
-      left: 8.2rem;    
+      left: 27.2rem;    
    
     }
     .add_item img{
@@ -468,12 +494,11 @@
       height: 8rem;
       border-radius: 1rem;
     }
-
    
     .footer{
       height: 7rem;
       width: 100%;    
-      top: 51rem;
+      top: 57rem;
       z-index: 1000;
     }
     .buy_shopping{

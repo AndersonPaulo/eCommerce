@@ -14,7 +14,7 @@ const Footer = ()=>{
 
         <div className="footer" style={{visibility:estilos}}>
 
-          <Link to = "section0" offset={-20}  smooth={true} duration={1100}>
+          <Link to = "section0" offset={-105}  smooth={true} duration={1100}>
               <span className="home" ><img src={Home} alt="" ></img></span>
           </Link>
           <LinkRouter to="/shopping">

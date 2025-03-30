@@ -36,7 +36,7 @@ const Head = () => {
                     <SearchItens estilo={{ display: estilosSeah }} />
                     <div className="search" data-qa="search" onClick={ShowSearch}><img src={Search} alt=""></img></div>
                     <div className="share" data-qa="share" onClick={()=>ShareButtom.compartilhar()}><img src={Share} alt=""></img></div>
-                    <Link to="/" ><div className="sair" data-qa="sair" >sair</div></Link>
+                    <Link to="/" ><div className="logof" data-qa="logof" >sair</div></Link>
 
                   </div>
 
