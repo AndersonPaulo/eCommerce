@@ -1,13 +1,13 @@
 import { Routes, Route , Navigate , useLocation } from 'react-router-dom'
-import Layout from "./scripts/Layout"
-import { Provider } from "./scripts/Context"
+import Layout from "./components/Layout"
+import { Provider } from "./components/Context"
 import './App.css'
 import Head from './scripts/head'
 import Footer from './scripts/footer'
-import  AboutPage from './scripts/aboutPage'
-import ShoppingPage from './scripts/shoppingPage'
-import Home from './scripts/home'
-import Login from './scripts/loginPage'
+import  AboutPage from './scriptPages/aboutPage'
+import ShoppingPage from './scriptPages/shoppingPage'
+import Home from './scriptPages/homePage'
+import Login from './scriptPages/loginPage'
 
 function App() {  
 

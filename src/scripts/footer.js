@@ -1,5 +1,5 @@
 import { Link } from 'react-scroll'
-import { useEstiloContext } from "./Context"
+import { useEstiloContext } from "../components/Context"
 import { Link as LinkRouter} from 'react-router-dom'
 import Shooping from "../assets/carrinho-de-compras.svg"
 import Home from "../assets/icon.png"

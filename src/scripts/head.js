@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { useEstiloContext } from "./Context"
+import { useEstiloContext } from "../components/Context"
 import ShareButtom from '../scripts/sheareButon'
 import MenuHorizontal from "../scripts/menuHorizontal"
 import SearchItens from '../scripts/serch'

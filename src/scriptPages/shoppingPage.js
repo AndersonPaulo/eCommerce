@@ -1,4 +1,4 @@
-import '../style/shoppingPage.css'
+import '../styles/shoppingPage.css'
 import Itens from "../assets/Frango_Assado.png"
 
 const Shooping = () =>{
