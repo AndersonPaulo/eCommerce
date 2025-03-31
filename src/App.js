@@ -8,6 +8,7 @@ import  AboutPage from './scriptPages/aboutPage'
 import ShoppingPage from './scriptPages/shoppingPage'
 import Home from './scriptPages/homePage'
 import Login from './scriptPages/loginPage'
+import Cart from './scriptPages/buyCartPage'
 
 function App() {  
 
@@ -29,9 +30,10 @@ function App() {
             <Layout>
               <Routes>
                   <Route path="/" element={<Login />}/>
-                  <Route path="/Home" element={<Home/>}/>
+                  <Route path="/Home" element={<Home />}/>
                   <Route path="/perfil-loja" element={<AboutPage />} />
-                  <Route path="/shopping" element={<ShoppingPage/>}/>  
+                  <Route path="/shopping" element={<ShoppingPage/>}/> 
+                  <Route path="/buy" element={<Cart />}/> 
                   <Route path="*" element={<Navigate to="/" />} />              
               </Routes>
             </Layout>
