@@ -7,7 +7,9 @@
     background: white;
     padding: 1rem;
     border-radius: 8px;
+    background-color: rgb(255, 178, 63);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
 }
 
 .cart-item {
@@ -32,19 +34,23 @@
 .quantity-controls {
     display: flex;
     align-items: center;
+    gap: 10px;
 }
 
 .quantity-controls button {
+
     background-color: #ff5722;
     color: white;
     border: none;
-    padding: 5px 10px;
-    cursor: pointer;
+    width: 30px;
+    height: 30px;
     font-size: 1rem;
     border-radius: 5px;
-    margin: 0 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
 .total-container {
     text-align: right;
     font-size: 1.2rem;

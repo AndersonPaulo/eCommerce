@@ -9,7 +9,7 @@
     font-size: 0.8rem;
     font-weight: 900;
     max-width: 100%;
-    overflow-x: hidden;
+   
     text-align: left;
 }
 
@@ -128,6 +128,7 @@ hr {
 }
 
 .downButton, .upButton {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -154,6 +155,7 @@ textarea {
     position: relative;
     top: 0.5rem;
     padding: 1rem;
+    z-index: 1000;
 }
 
 .advanceButton {
@@ -166,7 +168,8 @@ textarea {
     font-weight: 600;
     border-radius: 0.5rem;
     padding: 1rem;
-    cursor: pointer;
+    cursor: pointer;   
+    z-index: 1000000;
 }
 
 .advanceButton:hover {
@@ -176,7 +179,7 @@ textarea {
 @media screen and (min-width: 1025px) {
     .contentShopping {
         top: 13rem;
-        left: 50rem;
+        left: 45rem;
         font-size: 1rem;
     }
 
@@ -185,18 +188,24 @@ textarea {
     }
 
     .box {
-        width: 100%;
+        width: 200%;
     }
 
     .box_one, .box_two {
-        width: 50%;
+        width: 100%;
     }
 
     textarea {
-        width: 90%;
+        width: 180%;
+    }
+    hr{
+        width: 200%;
     }
     .advanceButton {
         position: relative;
         left: 0.5rem;
+        width: 180%;
+        z-index: 100000;
+
     }
 }

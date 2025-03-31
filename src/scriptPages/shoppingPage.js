@@ -1,4 +1,5 @@
 import '../styles/shoppingPage.css'
+import { Link } from 'react-router-dom'
 import Itens from "../assets/Frango_Assado.png"
 
 const Shooping = () =>{
@@ -32,13 +33,15 @@ const Shooping = () =>{
 
           <div className="observations">
                 <span className="title">Observações</span>
-                <textarea data-qa="text-area" placeholder='Ex.:Frango bem passado...'></textarea>
+                <textarea data-qa="text-area" type="text" placeholder='Ex.:Frango bem passado...'></textarea>
             </div>
 
-            <div className="advanceButton" data-qa="advanceButton">
+            <Link to="/buy"> 
+                <div className="advanceButton" data-qa="advanceButton">
                 <span data-qa="advance">Avançar</span>
                 <span data-qa="value"> R$ 00,00</span>
                 </div>
+            </Link>
         </div>
     )
 
