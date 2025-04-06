@@ -14,148 +14,7 @@
     font-size:0.8rem;
     color: rgb(0, 0, 0);
   }
-  .head{
-    display: flex;
-    position: fixed;
-    width: 100%;  
-    height: 100%;  
-    z-index:100;
-  }
-  .menu{
-    display: flex;
-    position: fixed;
-    background-color: rgb(143, 2, 2);
-    width: 100%;    
-    top:0rem;
-    z-index:100;
-  }
- 
-  .logo{
-    display: flex;
-    position: relative;
-    left: 0.5rem;
-    width: 4rem;
-    height: 4rem;
-    cursor: pointer;
-  }
-  .storeSlogan{
-    display: flex;
-    position: relative;
-    align-items: center;
-    color: white;
-    left: 1.88rem;
-    font-weight: 700;
-  }
-  .serch_itens{
-    display: none;
-    position: fixed;
-    top:0.9rem;
-    left:15.2rem;
-    width: 20%;
-    height: 3%;
-    border-radius: 1.5rem;
-  }
-  .search{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(246, 246, 246, 0.894);
-    border-radius: 1rem;
-    position: relative;
-    top: 1rem;
-    left: 3rem;
-    width: 1.1rem;
-    height: 1.1rem;
-    cursor: pointer;
-  }
- 
-  .search img{
-    width: 0.8rem;
-    height: 0.8rem;
-  }
-  .share{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(246, 246, 246, 0.894);
-    border-radius: 1rem;
-    position: relative;
-    top: 1rem;
-    left: 3.5rem;
-    width: 1.1rem;
-    height: 1.1rem;
-    cursor: pointer;
   
-  }
-  .share img{
-    width: 0.8rem;
-    height: 0.8rem;
-  }
-  .logof{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(246, 246, 246, 0.894);   
-    border-radius: 1rem;
-    position: relative;
-    top: 1rem;
-    left: 6em;
-    width: 1.3rem;
-    height: 1.2rem;
-    cursor: pointer;
-    font-size: 0.7rem;
-    font-weight: 800;
-  }
-  .submenu{
-    display: flex;
-    position: fixed;
-    justify-content: space-around;
-    flex-wrap: nowrap;
-    width: 100%;
-    height: 3.7%;
-    font-size: 0.7rem;
-    font-weight: 600;
-    top: 4rem;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-    background-color: rgb(254, 165, 40);
-    z-index: 1000;
-  }
- 
-  .perfil_button{
-    color: red;
-    font-weight: 800;
-    cursor: pointer;
-  }
-  .fhatherScroll{
-    position: sticky ;
-    height: 100%;
-    width: 100%;
-    max-height: 25%;
-    top: 5.5rem;
-    z-index: 10000;
-    overflow-y: auto;
-    overflow-x: visible; 
-    
-  }
-  .scroll_menu {  
-    width: 100%;    
-    position: relative;   
-    top:  0rem;    
-    background-color:rgb(254, 165, 40);
-  }
-  .scroll_menu .menu_itens{
-    text-align: center;    
-    font-size: 0.7rem;
-    font-weight: 800;
-    background-color: blanchedalmond;
-    border-radius: 1rem;
-    
-      
-  }
- 
-  .scroll_menu .menu_itens.active{
-    background-color: lightblue;
-  }
   .name_list .name{
     display: flex;
     position: relative;
@@ -280,40 +139,7 @@
     width:0.8rem;
   }  
 
-  .footer{
-    display: flex;
-    position: fixed;
-    height: 3.5rem;
-    width: 100%;
-    background-color: #e5dfdf;
-    top: 38.2rem;
-    z-index: 1000;
-  }
-  .buy_shopping{
-    width: 1.7rem;
-    height: 1.7rem;
-    display: flex;
-    position: relative;
-    justify-content: center;
-    border-radius: 0.1rem;
-    left: 17.5rem;
-    top: 1rem;
-    cursor: pointer;
-    
-  }
-  .home{
-    width: 2.5rem;
-    height: 2.5rem;
-    display: flex;
-    position: relative;
-    justify-content: center;
-    border-radius: 0.1rem;
-    left: 1.5rem;
-    top: 1rem;
-    cursor: pointer;
-  }
-
-    
+  
 
   @media screen and (min-width:1025px) {
 
@@ -321,79 +147,7 @@
       background-color: #f8f8f8;     
     }
   
-    .menu{   
-      width: 150%;
-      height: 15%;
-    }
-    .logo{ 
-      left: 15.5rem;
-      width: 10rem;
-      height: 10rem;
-    }
-    .storeSlogan{ 
-      font-size: 1.5rem;
-      left: 18rem;
-      font-weight: 700;
-    }
-    .serch_itens{
-      display: none;
-      position: fixed;
-      top:3.9rem;
-      left:55.7rem;
-      width: 30%;
-      height: 4%;
-      border-radius: 1.5rem;
-    }
-    .search{     
-      border-radius: 1rem;    
-      top: 4rem;
-      left: 81.5rem;
-      width: 3rem;
-      height: 3rem;
-    }
-    .search img{
-      width: 2rem;
-      height: 2rem;
-    }
-    .logof{      
-      top: 4rem;
-      left: 82.5em;
-      width: 4rem;
-      height: 3rem;
-      font-size: 1rem;
-      font-weight: 900;
-    }
-    .share{   
-      border-radius: 1rem;    
-      top: 4rem;
-      left: 82rem;
-      width: 3rem;
-      height: 3rem;    
-    }
-    .share img{
-      width: 2rem;
-      height: 2rem;
-    }
-    .submenu{  
-      width: 100%;
-      height: 7%;
-      font-size: 1rem;
-      font-weight: 600;
-      top: 8.5rem;     
-     
-    }
-    .opened{
-      position: relative;
-      right: 18rem;
-      top: 1rem;
-    }   
-    .perfil_button{
-      top: 1rem;
-      font-weight: 800;
-    }
-    .fhatherScroll{
-      display: none;      
-    } 
+ 
     .name_list {
       height: 100vh;
       margin-top: 15rem;
@@ -498,26 +252,6 @@
       border-radius: 1rem;
     }
    
-    .footer{
-      height: 7rem;
-      width: 100%;    
-      top: 57rem;
-      z-index: 1000;
-    }
-    .buy_shopping{
-      width: 2.5rem;
-      height: 2.5rem;
-      border-radius: 0.1rem;
-      left: 100rem;
-      top: 2rem;      
-    }
-    .home{
-      width: 5rem;
-      height: 5rem;
-      border-radius: 0.1rem;
-      left: 15rem;
-      top: 1rem;   
-    }
     
     
   }

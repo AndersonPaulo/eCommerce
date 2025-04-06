@@ -7,7 +7,7 @@ import SearchItens from '../scripts/serch'
 import logo from "../assets/oie_transparent.png"
 import Search from "../assets/procurar.svg"
 import Share from "../assets/compartilhar.png"
-
+import '../styles/head.css'
 
 const Head = () => {
  

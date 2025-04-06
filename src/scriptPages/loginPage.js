@@ -23,7 +23,7 @@ const Login = () =>{
             <form onSubmit={handleSubmit} className="form" data-qa="form">
                 <div className='name'>Login</div>
                 <div className="username">
-                <label>username</label>
+                <label>Username</label>
                 <input type="text" data-qa="username" value={username}className="inputusername" name="username" placeholder="username.." onChange={(e) => setUsername(e.target.value) }/> 
                 </div>
                 <div className="password">
@@ -33,7 +33,10 @@ const Login = () =>{
                 
                 <input  className="login" type="submit" value="Login" />
 
-
+                <div>
+                    <span>username : usuario</span>
+                    <span>Password : senha</span>
+                </div>
             </form>
 
         </div>

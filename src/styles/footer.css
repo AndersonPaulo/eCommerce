@@ -1,0 +1,56 @@
+.footer{
+    display: flex;
+    position: fixed;
+    height: 3.5rem;
+    width: 100%;
+    background-color: #e5dfdf;
+    top: 38.2rem;
+    z-index: 100;
+  }
+  .buy_shopping{
+    width: 1.7rem;
+    height: 1.7rem;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    border-radius: 0.1rem;
+    left: 17.5rem;
+    top: 1rem;
+    cursor: pointer;
+    
+  }
+  .home{
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    border-radius: 0.1rem;
+    left: 1.5rem;
+    top: 1rem;
+    cursor: pointer;
+  }
+
+  @media screen and (min-width:1025px) {
+
+    .footer{
+        height: 7rem;
+        width: 100%;    
+        top: 57rem;
+      }
+      .buy_shopping{
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 0.1rem;
+        left: 100rem;
+        top: 2rem;      
+      }
+      .home{
+        width: 5rem;
+        height: 5rem;
+        border-radius: 0.1rem;
+        left: 15rem;
+        top: 1rem;   
+      }
+      
+  }   

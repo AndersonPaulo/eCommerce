@@ -11,7 +11,7 @@ const Cart = () => {
   const updateQuantity = (id, amount) => {
     setCart((prevCart) =>
       prevCart.map((item) =>
-        item.id === id ? { ...item, quantity: Math.max(1, item.quantity + amount) } : item
+        item.id === id ? { ...item, quantity: Math.max(1, Math.min(9, item.quantity + amount)) } : item
       )
     )
   }
@@ -29,9 +29,9 @@ const Cart = () => {
             <span>{item.name}</span>
             <span>R$ {item.price.toFixed(2)}</span>
             <div className="quantity-control">
-              <button onClick={() => updateQuantity(item.id, -1)}>-</button>
-              <span>{item.quantity}</span>
-              <button onClick={() => updateQuantity(item.id, 1)}>+</button>
+              <span className="buttonDown" onClick={() => updateQuantity(item.id, -1)}>-</span>
+              <span className="numberProducts">{item.quantity}</span>
+              <span className="buttonUp" onClick={() => updateQuantity(item.id, 1)}>+</span>
             </div>
           </li>
         ))}
@@ -43,14 +43,13 @@ const Cart = () => {
         <option value="">Selecione</option>
         <option value="pix">Pix</option>
         <option value="cartao">Cartão de Crédito</option>
-        <option value="dinheiro">Dinheiro</option>
       </select>
 
-      {paymentMethod === "dinheiro" && (
-        <input type="number" placeholder="Valor para troco" className="change-input" />
+      {paymentMethod === "boleto" && (
+        <input type="number" placeholder="Digite o código de barras" className="change-input" />
       )}
 
-      <button className="checkout-button">Finalizar Compra</button>
+      <span className="payment-button">Finalizar Compra</span>
     </div>
   )
 }
