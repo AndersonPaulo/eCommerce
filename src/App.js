@@ -13,14 +13,14 @@ import Cart from './scriptPages/buyCartPage'
 function App() {  
 
   const location = useLocation();
-  const isLoginPage = location.pathname === "/" // Verifica se está na página de login
-
+    const isLoginPage = location.pathname === "/" // Verifica se está na página de login
+    const isLoginBuy = location.pathname === "/buy"
   return (
     <Provider>
       <div className="App">
         
             {/* Exibe o Head (Menu) apenas se NÃO estiver na página de login */}
-        {!isLoginPage && (
+        {!isLoginBuy && !isLoginPage && (
           <header className="App-header">
             <Head />
           </header>

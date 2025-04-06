@@ -1,10 +1,10 @@
 .footer{
     display: flex;
     position: fixed;
-    height: 3.5rem;
+    height: 15%;
     width: 100%;
     background-color: #e5dfdf;
-    top: 38.2rem;
+    bottom:  0rem;
     z-index: 100;
   }
   .buy_shopping{
@@ -33,11 +33,7 @@
 
   @media screen and (min-width:1025px) {
 
-    .footer{
-        height: 7rem;
-        width: 100%;    
-        top: 57rem;
-      }
+ 
       .buy_shopping{
         width: 2.5rem;
         height: 2.5rem;

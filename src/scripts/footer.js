@@ -9,7 +9,7 @@ const Footer = ()=>{
     
     const { estilos } = useEstiloContext()
     const { esconderFooter } = useEstiloContext()
-
+    const { esconderScrool } = useEstiloContext()
 
     return(
 
@@ -19,7 +19,8 @@ const Footer = ()=>{
               <span className="home" ><img src={Home} alt="" ></img></span>
           </Link>
           <LinkRouter to="/shopping">
-                <span className="buy_shopping" data-qa="buy_shopping"  onClick={esconderFooter} ><img src={Shooping} alt="" ></img></span>
+                <span className="buy_shopping" data-qa="buy_shopping"  onClick={() => {esconderFooter(); esconderScrool()}}
+ ><img src={Shooping} alt="" ></img></span>
           </LinkRouter>
           
         </div>

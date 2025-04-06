@@ -35,6 +35,7 @@
   }
   .all_product{
     position: absolute;
+    height: 5000px;
     top:0rem;
     left: 3rem;
   }

@@ -1,8 +1,11 @@
 import '../styles/shoppingPage.css'
 import { Link } from 'react-router-dom'
 import Itens from "../assets/Frango_Assado.png"
+import { useEstiloContext } from "../components/Context"
 
 const Shooping = () =>{
+
+    const { esconderScrool } = useEstiloContext()
 
     return(
         <div className="contentShopping" data-qa="contentShopping">
@@ -37,7 +40,7 @@ const Shooping = () =>{
             </div>
 
             <Link to="/buy"> 
-                <div className="advanceButton" data-qa="advanceButton">
+                <div className="advanceButton" data-qa="advanceButton" onClick={esconderScrool}>
                 <span data-qa="advance">Avançar</span>
                 <span data-qa="value"> R$ 00,00</span>
                 </div>
