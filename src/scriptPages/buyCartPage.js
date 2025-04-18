@@ -1,12 +1,13 @@
-import React, { useState } from "react"
+import { useState } from "react"
 import "../styles/buyCartPage.css"
 
 const Cart = () => {
+
   const [cart, setCart] = useState([
     { id: 1, name: "Frango", price: 25.0, quantity: 1 },
     { id: 2, name: "Franco/Salpicão", price: 15.0, quantity: 1 },
   ])
-  const [paymentMethod, setPaymentMethod] = useState("");
+  const [paymentMethod, setPaymentMethod] = useState("")
 
   const updateQuantity = (id, amount) => {
     setCart((prevCart) =>

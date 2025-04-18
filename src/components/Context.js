@@ -1,4 +1,7 @@
 import React, { createContext, useState, useContext } from "react"
+import CartSlect from "./CartToSelect"
+
+const cartSelect = new CartSlect()
 
 // Criando o contexto
 const Context = createContext()
@@ -6,6 +9,7 @@ const Context = createContext()
 // Provider que envolve os componentes
 export const Provider = ({ children }) => {
   const [estilos, setEstilos] = useState("visible")
+  const [total, setTotal] = useState(0)
 
   const mostrarFooter = () => {
     setEstilos((prev) => (prev === 'hidden' ? 'visible' : 'visible'))
@@ -23,9 +27,13 @@ export const Provider = ({ children }) => {
     setEstilos((prev) => (prev === "visible" ? "hidden" : "hidden"))
 
   }
+  const mostrarTotal = () =>{
+    setTotal((prev) => (prev === cartSelect.getItens() ? 0 : cartSelect.getItens()))
+
+  }
 
   return (
-    <Context.Provider value={{ estilos, mostrarFooter ,esconderFooter,mostrarScrool,esconderScrool}}>
+    <Context.Provider value={{estilos,total,mostrarTotal, mostrarFooter ,esconderFooter,mostrarScrool,esconderScrool}}>
       {children}
     </Context.Provider>
   )

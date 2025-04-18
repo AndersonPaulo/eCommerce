@@ -25,7 +25,7 @@ Este é um projeto de estudo e prática de desenvolvimento web e automação, on
 
 ### 1️⃣ Clonar o repositório  
 ```bash
-git clone hhttps://github.com/AndersonPaulo/eCommerce
+git clone https://github.com/AndersonPaulo/eCommerce
 ```
 
 ### 2️⃣ Instalar dependências  

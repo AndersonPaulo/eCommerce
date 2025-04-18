@@ -85,27 +85,7 @@
     color: chocolate;
     font-weight: 800;
   }
-  .add_item{
-    position: relative;
-    width: 1rem;
-    height: 1rem;    
-    justify-content: center;
-    align-items: center;
-    border-radius: 0.21rem;
-    background-color:rgb(128, 84, 248);
-    left: 5rem;
-    top: -4rem;
-    cursor: pointer;
-  }
-  .add_item img{
-    position: relative;
-    display: flex;
-    top:0.5rem;
-    width: 0.5rem;
-    height: 1.5rem;
-   
-  }
-
+  
   .add_shopping{
     width: 1rem;
     height: 1.8rem;
@@ -114,28 +94,16 @@
     justify-content: center;
     border-radius: 0.2rem;
     background-color:rgb(248, 84, 84);
-    left: 7rem;
-    top: -5.3rem;
+    left: 2rem;
+    top: -3rem;
     cursor: pointer;
   }
-  .add_item img{
-    rotate:calc(45deg);
-    width:0.7rem;
+  .add_shopping:hover{
+    background-color:rgb(192, 55, 55);
+
   }
-  span .unity{
-  
-    text-align: center;
-    position: relative;
-    top: 0.3rem;
-    left: 0.5rem; 
-    background-color: red;
-    border-radius: 0.5rem;
-  }
-  .unity{
-    color: white;
-    font-size: 0.7rem;
-    font-weight: 700;
-  }
+
+
   .add_shopping img{
     width:0.8rem;
   }  
@@ -192,20 +160,7 @@
       top:2rem;
       font-weight: 800;
     }
-    .add_item{    
-      width: 1rem;
-      height: 1rem;    
-      justify-content: center;
-      align-items: center;
-      border-radius: 0.3rem;     
-      left: 20rem;
-      top:-5rem;   
-      cursor: pointer  
-    }
-    .add_item img{    
-      top:0.8rem;
-      left: 0rem;
-    }  
+ 
     .add_shopping{
       position: relative;
       width: 1rem;
@@ -217,22 +172,8 @@
       cursor: pointer; 
    
     }
-    .add_item img{
-      rotate:calc(45deg);
-      width:1rem;
-    }
-    span .unity{
-      top: 0.1rem;
-      left: 1.12rem;
-      width: 0.2rem;
-      height: 0.3rem;    
-      border-radius: 0.5rem;
-    }
-    .unity{    
-      position: relative;
-      font-size: 0.79rem;
-      font-weight: 900;
-    }
+   
+   
     .add_shopping img{
       width:1rem;
     }

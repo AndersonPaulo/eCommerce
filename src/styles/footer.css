@@ -7,6 +7,24 @@
     bottom:  0rem;
     z-index: 100;
   }
+ span.unity{
+    display: flex;
+    width: 3%;
+    height: 15%;
+    justify-content: center;
+    position: relative;
+    top: 2.5rem;
+    left: 21.4rem; 
+    background-color: rgb(254, 165, 40);
+    border-radius: 0.5rem;
+    z-index: 1;
+  
+  }
+  .unity{
+    color: rgb(255, 0, 0);
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
   .buy_shopping{
     width: 1.7rem;
     height: 1.7rem;
@@ -14,7 +32,7 @@
     position: relative;
     justify-content: center;
     border-radius: 0.1rem;
-    left: 17.5rem;
+    left: 16rem;
     top: 1rem;
     cursor: pointer;
     
@@ -41,6 +59,15 @@
         left: 100rem;
         top: 2rem;      
       }
+      span.unity{
+        width: 0.2%;
+        height: 1.5%;
+        align-items: center;
+        top: 4.5rem;
+        left: 109.5rem; 
+      
+      }
+ 
       .home{
         width: 5rem;
         height: 5rem;
