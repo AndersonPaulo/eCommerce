@@ -1,0 +1,201 @@
+/*
+  ==============================================
+  Estilos para o Cabeçalho (head) - Responsivo e Sticky
+  ==============================================
+*/
+
+.head {
+    display: flex;
+    position: sticky;
+    width: 100%;   
+    height: auto;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    flex-direction: column;
+}
+
+.menu {
+    display: flex;
+    position: relative;
+    align-items: center;
+    background-color: rgb(143, 2, 2);
+    width: 100%;
+    padding: 0.5rem 1rem;
+    box-sizing: border-box;
+    min-height: 4rem;
+}
+
+.logo {
+    display: flex;
+    position: relative;
+    width: 3.5rem;
+    height: 3.5rem;
+    cursor: pointer;
+    margin-right: 0.5rem;
+}
+
+.storeSlogan {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-weight: 700;
+    font-size: 1rem;
+    margin-right: auto;
+}
+
+.serch_itens {
+    display: none;
+}
+
+.action-icons {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    /* Adicionado para controlar a largura do grupo de ícones em mobile */
+    flex-shrink: 0; 
+}
+
+.search, .share, .logof {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(246, 246, 246, 0.894);
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    position: relative;
+    /* Garante que não fiquem menores que o necessário */
+    min-width: 2rem; 
+}
+
+.search img, .share img {
+    width: 1rem;
+    height: 1rem;
+}
+
+.logof {
+    width: 2.2rem;
+    height: 2.2rem;
+    font-size: 0.8rem;
+    font-weight: 800;
+}
+
+.submenu {
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    width: 100%;
+    padding: 0.5rem 0;
+    font-size: 0.8rem;
+    font-weight: 600;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    background-color: rgb(254, 165, 40);
+}
+
+.perfil_button {
+    color: red;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.fhatherScroll {
+    position: sticky;
+    width: 100%;
+    max-height: 20vh;
+    overflow-y: auto;
+    top: 4.5rem;
+    background-color: rgb(254, 165, 40);
+}
+
+.scroll_menu {
+    display: flex;
+    padding: 0.5rem;
+    gap: 0.5rem;
+}
+
+.scroll_menu .menu_itens {
+    text-align: center;
+    font-size: 0.7rem;
+    font-weight: 800;
+    background-color: blanchedalmond;
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+    white-space: nowrap;
+}
+
+.scroll_menu .menu_itens.active {
+    background-color: lightblue;
+}
+
+/*
+  ==============================================
+  Media Query para Desktop (Telas Maiores que 1025px)
+  ==============================================
+*/
+@media screen and (min-width: 1025px) {
+
+    /* Head */
+    .head {
+        height: auto;
+    }
+
+    .menu {
+        width: 100%;
+        min-height: 7rem;
+        padding: 1rem 5%;
+    }
+
+    .logo {
+        width: 5rem;
+        height: 5rem;
+        margin-right: 1.5rem;
+    }
+
+    .storeSlogan {
+        font-size: 1.8rem;
+    }
+    
+    .serch_itens {
+        display: block;
+        position: relative;
+        top: auto;
+        left: auto;
+        width: 30%;
+        height: 2rem;
+        border-radius: 1.5rem;
+        margin-right: 1rem;
+    }
+    
+    .action-icons {
+        gap: 1rem;
+    }
+
+    .search, .share, .logof {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .search img, .share img {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    
+    .logof {
+        width: 3.5rem;
+        height: 3.5rem;
+        font-size: 1rem;
+    }
+
+    .submenu {
+        width: 100%;
+        padding: 0.8rem 0;
+        font-size: 1rem;
+    }
+    
+    .fhatherScroll {
+        display: none;
+    }
+}

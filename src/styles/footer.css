@@ -1,0 +1,102 @@
+/*
+  ==============================================
+  Estilos do Rodapé (footer) - Responsivo
+  ==============================================
+*/
+.footer {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: space-around;
+    height: 3.5rem;
+    width: 100%;
+    background-color: #e5dfdf;
+    bottom: 0;
+    z-index: 100;
+    padding: 0 1rem;
+    box-sizing: border-box;
+}
+
+.home {
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.shopping-container {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.buy_shopping img {
+    /* Corrigido para garantir que a imagem não vaze */
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+
+span.unity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -0.5rem;
+    right: -0.5rem;
+    width: 1.2rem;
+    height: 1.2rem;
+    background-color: rgb(254, 165, 40);
+    border-radius: 50%;
+    z-index: 1;
+    color: rgb(255, 0, 0);
+    font-size: 0.7rem;
+    font-weight: 700;
+}
+
+.unity {
+    color: rgb(255, 0, 0);
+    font-size: 0.7rem;
+    font-weight: 700;
+}
+
+
+/*
+  ==============================================
+  Media Query para Desktop (Telas Maiores que 1025px)
+  ==============================================
+*/
+@media screen and (min-width: 1025px) {
+
+    /* Footer */
+    .footer {
+        justify-content: space-between;
+        height: 5rem;
+        padding: 0 15%;
+    }
+
+    .home {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+
+    .buy_shopping img {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+
+    span.unity {
+        top: -0.7rem;
+        right: -0.7rem;
+        width: 1.5rem;
+        height: 1.5rem;
+        font-size: 0.9rem;
+    }
+}
